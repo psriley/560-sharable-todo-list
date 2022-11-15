@@ -9,7 +9,7 @@ Create Table ToDone.Task
 	DueDate Date,
 	CompletedOn DateTimeOffset,
 	PrivacyLevel Int Foreign Key References ToDone.PrivacyLevel(PrivacyID),
-	Claimable Bit Not Null Default 0,
+	IsClaimable Bit Not Null Default 0,
 	IsActive Bit Not Null Default 1
 );
 End;
