@@ -13,8 +13,5 @@ namespace ToDoneApp
 
         IReadOnlyList<Users> FetchUsersFriends(string DisplayName);
 
-        void DeleteUser(string DisplayName);
-
-
     }
 }

@@ -29,7 +29,13 @@ namespace ToDoneApp.DataDelegates
             if(!reader.Read())
             throw new RecordNotFoundException($"User {displayName} not found");
 
-            return new Users(reader.GetInt32("UserID"), displayName, reader.GetString("PasswordHash"), reader.GetString("FirstName"), reader.GetString("LastName"), reader.GetValue<bool>("IsAdmin"));
+            return new Users(
+                reader.GetInt32("UserID"), 
+                displayName, 
+                reader.GetString("PasswordHash"), 
+                reader.GetString("FirstName"), 
+                reader.GetString("LastName"), 
+                reader.GetValue<bool>("IsAdmin"));
         }
     }
 }

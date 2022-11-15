@@ -26,5 +26,21 @@ namespace ToDoneApp
             var d = new CreateUserDataDelegate(displayName, passwordHash, firstName, lastName, isAdmin);
             return executor.ExecuteNonQuery(d);
         }
+
+        public Users GetUser(string displayName)
+        {
+            if (string.IsNullOrEmpty(displayName)) throw new ArgumentException($"The parameter {nameof(displayName)} cannot be null or empty");
+
+            var d = new GetUserDataDelegate(displayName);
+            return executor.ExecuteReader(d);
+        }
+
+        public IReadOnlyList<Users> FetchUsersFriends(string displayName)
+        {
+            if (string.IsNullOrEmpty(displayName)) throw new ArgumentException($"The parameter {nameof(displayName)} cannot be null or empty");
+
+            var d = new FetchUsersFriendsDataDelegate(displayName);
+            return executor.ExecuteReader(d);
+        }
     }
 }
