@@ -4,7 +4,7 @@
 	@GroupID INT OUTPUT
 AS
 
-INSERT ToDone.Users(Title, [Description])
+INSERT ToDone.Groups(Title, [Description])
 VALUES(@Title, @Description)
 
 SET @GroupID = SCOPE_IDENTITY();

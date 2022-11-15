@@ -27,7 +27,7 @@ namespace ToDoneApp.DataDelegates
             command.Parameters.AddWithValue("Title", Title);
             command.Parameters.AddWithValue("Description", Description);
 
-            var p = command.Parameters.Add("GroupId", SqlDbType.Int);
+            var p = command.Parameters.Add("GroupID", SqlDbType.Int);
             p.Direction = ParameterDirection.Output;
         }
 
