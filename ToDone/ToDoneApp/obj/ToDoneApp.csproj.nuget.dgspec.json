@@ -4,6 +4,21 @@
     "C:\\Users\\chrbe\\source\\Repos\\560-sharable-todo-list\\ToDone\\ToDoneApp\\ToDoneApp.csproj": {}
   },
   "projects": {
+    "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
     "C:\\Users\\chrbe\\source\\Repos\\560-sharable-todo-list\\ToDone\\ToDoneApp\\ToDoneApp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +47,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,6 +63,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

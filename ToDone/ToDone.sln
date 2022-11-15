@@ -3,11 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoneApp", "ToDoneApp\ToDoneApp.csproj", "{54F938AA-D928-467A-8F1F-B028BAE9953C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoneApp", "ToDoneApp\ToDoneApp.csproj", "{54F938AA-D928-467A-8F1F-B028BAE9953C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7} = {A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3ADA318E-6CF0-41ED-8DE7-017D73397D47}"
+	ProjectSection(SolutionItems) = preProject
+		RebuildDatabase.ps1 = RebuildDatabase.ps1
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{00D51078-054A-4A15-8E8A-9891EAC54247}"
+	ProjectSection(SolutionItems) = preProject
+		CreateDatabase.ps1 = CreateDatabase.ps1
+		CreateDatabase.sql = CreateDatabase.sql
+		DropDatabase.ps1 = DropDatabase.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\..\..\..\Desktop\School\DB\Project\DataAccessDemo2\DataAccessDemo2\DataAccess\DataAccess.csproj", "{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +32,10 @@ Global
 		{54F938AA-D928-467A-8F1F-B028BAE9953C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54F938AA-D928-467A-8F1F-B028BAE9953C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54F938AA-D928-467A-8F1F-B028BAE9953C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AC459D-6C0A-4D6E-AD65-ECB3E0FEC3A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
