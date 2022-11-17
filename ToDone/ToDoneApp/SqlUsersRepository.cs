@@ -42,5 +42,13 @@ namespace ToDoneApp
             var d = new FetchUsersFriendsDataDelegate(displayName);
             return executor.ExecuteReader(d);
         }
+
+        public IReadOnlyList<Users> FetchGroupsUsers(string displayName)
+        {
+            if (string.IsNullOrEmpty(displayName)) throw new ArgumentException($"The parameter {nameof(displayName)} cannot be null or empty");
+
+            var d = new FetchGroupsUsersDataDelegate(displayName);
+            return executor.ExecuteReader(d);
+        }
     }
 }

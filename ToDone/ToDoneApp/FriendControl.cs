@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace ToDoneApp
 {
-    public partial class FriendControll : UserControl
+    public partial class FriendControl : UserControl
     {
-        public FriendControll()
+        public FriendControl()
         {
             InitializeComponent();
         }

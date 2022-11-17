@@ -16,3 +16,12 @@ C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\ne
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.FriendControll.resources
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.MainForm.resources
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.Properties.Resources.resources
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.csproj.CopyComplete

@@ -1,6 +1,6 @@
 ﻿namespace ToDoneApp
 {
-    partial class FriendControll
+    partial class FriendControl
     {
         /// <summary> 
         /// Required designer variable.
