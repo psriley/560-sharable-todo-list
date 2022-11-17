@@ -1,0 +1,5 @@
+﻿CREATE OR ALTER PROCEDURE ToDone.FetchGroups
+AS
+SELECT *
+FROM ToDone.Groups
+GO
