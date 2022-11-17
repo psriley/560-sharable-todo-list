@@ -1,39 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chrbe\\source\\Repos\\560-sharable-todo-list\\ToDone\\ToDoneApp\\ToDoneApp.csproj": {}
+    "E:\\GitHub\\Repositories\\560Project\\ToDone\\ToDoneApp\\ToDoneApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj": {
+    "E:\\GitHub\\Repositories\\560Project\\ToDone\\DataAccess\\DataAccess.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "E:\\GitHub\\Repositories\\560Project\\ToDone\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj",
+        "projectPath": "E:\\GitHub\\Repositories\\560Project\\ToDone\\DataAccess\\DataAccess.csproj",
         "frameworks": {
-          "net48": {
+          "net461": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net48": {}
+        "net461": {}
       }
     },
-    "C:\\Users\\chrbe\\source\\Repos\\560-sharable-todo-list\\ToDone\\ToDoneApp\\ToDoneApp.csproj": {
+    "E:\\GitHub\\Repositories\\560Project\\ToDone\\ToDoneApp\\ToDoneApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chrbe\\source\\Repos\\560-sharable-todo-list\\ToDone\\ToDoneApp\\ToDoneApp.csproj",
+        "projectUniqueName": "E:\\GitHub\\Repositories\\560Project\\ToDone\\ToDoneApp\\ToDoneApp.csproj",
         "projectName": "ToDoneApp",
-        "projectPath": "C:\\Users\\chrbe\\source\\Repos\\560-sharable-todo-list\\ToDone\\ToDoneApp\\ToDoneApp.csproj",
-        "packagesPath": "C:\\Users\\chrbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chrbe\\source\\Repos\\560-sharable-todo-list\\ToDone\\ToDoneApp\\obj\\",
+        "projectPath": "E:\\GitHub\\Repositories\\560Project\\ToDone\\ToDoneApp\\ToDoneApp.csproj",
+        "packagesPath": "C:\\Users\\Peyton\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\Repositories\\560Project\\ToDone\\ToDoneApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\chrbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Peyton\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,15 +37,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\chrbe\\Desktop\\School\\DB\\Project\\DataAccessDemo2\\DataAccessDemo2\\DataAccess\\DataAccess.csproj"
+              "E:\\GitHub\\Repositories\\560Project\\ToDone\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "E:\\GitHub\\Repositories\\560Project\\ToDone\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -75,8 +70,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -88,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
