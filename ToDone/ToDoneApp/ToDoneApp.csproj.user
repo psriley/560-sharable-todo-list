@@ -25,6 +25,12 @@
     <Compile Update="FriendControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="TaskCommentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="TaskControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserResultComponent.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -11,7 +11,7 @@ namespace ToDoneApp
 {
     public partial class FriendControl : UserControl
     {
-        public FriendControl(Users u)
+        public FriendControl(Users u, string connectionString)
         {
             InitializeComponent();
             uxFriendName.Text = u.DisplayName;

@@ -11,7 +11,7 @@ namespace ToDoneApp
 {
     public partial class GroupControl : UserControl
     {
-        public GroupControl(Groups g)
+        public GroupControl(Groups g, string connectionString)
         {
             InitializeComponent();
             uxGroupName.Text = g.Title;

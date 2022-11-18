@@ -39,13 +39,13 @@ namespace ToDoneApp
         private void ShowAdminButton()
         {
             // if isAdmin is true, button is not visible
-            uxAdminButton.Visible = isAdmin ? true : false;
+            uxAdminButton.Visible = user.IsAdmin ? true : false;
         }
 
         private void uxMyTasksButton_Click(object sender, EventArgs e)
         {
             uxMainBox.Text = uxMyTasksButton.Text;
-            // Display all of the users tasks in main box
+            MainForm_Load(this, e);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -54,23 +54,29 @@ namespace ToDoneApp
             uxClock.Text = datetime.ToString();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        public void MainForm_Load(object sender, EventArgs e)
         {
             IReadOnlyList<Users> friends = new SqlUsersRepository(connectionString).FetchUsersFriends(user.UserID);
             foreach(Users u in friends)
             {
-                uxFriendsBox.Controls.Add(new FriendControl(u));
+                uxFriendsBox.Controls.Add(new FriendControl(u, connectionString));
             }
             IReadOnlyList<Groups> groups = new SqlUsersRepository(connectionString).FetchUsersGroups(user.UserID);
             foreach(Groups g in groups)
             {
-                uxGroupsBox.Controls.Add(new GroupControl(g));
+                uxGroupsBox.Controls.Add(new GroupControl(g, connectionString));
+            }
+            IReadOnlyList<ToDoneApp.Models.Task> tasks = new SqlTaskRepository(connectionString).FetchUserTasks(user.UserID);
+            foreach(ToDoneApp.Models.Task t in tasks)
+            {
+                uxMainBox.Controls.Add(new TaskControl(t, connectionString, user));
             }
         }
 
         private void uxAddTask_Click(object sender, EventArgs e)
         {
-            CreateTaskControl cTask = new CreateTaskControl();
+            uxMainBox.Controls.Clear();
+            CreateTaskControl cTask = new CreateTaskControl(user, connectionString);
             uxMainBox.Controls.Add(cTask);
         }
 

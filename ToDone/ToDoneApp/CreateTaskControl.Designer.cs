@@ -31,13 +31,13 @@
             this.uxCancel = new System.Windows.Forms.Button();
             this.uxMakeTask = new System.Windows.Forms.Button();
             this.uxTitle = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.uxDueDate = new System.Windows.Forms.DateTimePicker();
             this.uxPrivacy = new System.Windows.Forms.ComboBox();
             this.uxClaimable = new System.Windows.Forms.CheckBox();
             this.uxDescription = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.uxDueDateLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.uxHasDueDate = new System.Windows.Forms.CheckBox();
@@ -61,6 +61,7 @@
             this.uxMakeTask.TabIndex = 1;
             this.uxMakeTask.Text = "Make Task";
             this.uxMakeTask.UseVisualStyleBackColor = true;
+            this.uxMakeTask.Click += new System.EventHandler(this.uxMakeTask_Click);
             // 
             // uxTitle
             // 
@@ -69,20 +70,20 @@
             this.uxTitle.Size = new System.Drawing.Size(475, 23);
             this.uxTitle.TabIndex = 2;
             // 
-            // dateTimePicker2
+            // uxDueDate
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(104, 329);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(449, 23);
-            this.dateTimePicker2.TabIndex = 5;
+            this.uxDueDate.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.uxDueDate.Location = new System.Drawing.Point(104, 329);
+            this.uxDueDate.Name = "uxDueDate";
+            this.uxDueDate.Size = new System.Drawing.Size(449, 23);
+            this.uxDueDate.TabIndex = 5;
             // 
             // uxPrivacy
             // 
             this.uxPrivacy.FormattingEnabled = true;
             this.uxPrivacy.Location = new System.Drawing.Point(124, 371);
             this.uxPrivacy.Name = "uxPrivacy";
-            this.uxPrivacy.Size = new System.Drawing.Size(121, 23);
+            this.uxPrivacy.Size = new System.Drawing.Size(210, 23);
             this.uxPrivacy.TabIndex = 6;
             // 
             // uxClaimable
@@ -121,14 +122,14 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Description:";
             // 
-            // label3
+            // uxDueDateLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 333);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Due Date:";
+            this.uxDueDateLabel.AutoSize = true;
+            this.uxDueDateLabel.Location = new System.Drawing.Point(40, 333);
+            this.uxDueDateLabel.Name = "uxDueDateLabel";
+            this.uxDueDateLabel.Size = new System.Drawing.Size(58, 15);
+            this.uxDueDateLabel.TabIndex = 11;
+            this.uxDueDateLabel.Text = "Due Date:";
             // 
             // label4
             // 
@@ -158,6 +159,7 @@
             this.uxHasDueDate.TabIndex = 14;
             this.uxHasDueDate.Text = "Due Date";
             this.uxHasDueDate.UseVisualStyleBackColor = true;
+            this.uxHasDueDate.CheckedChanged += new System.EventHandler(this.uxHasDue_Changed);
             // 
             // CreateTaskControl
             // 
@@ -166,13 +168,13 @@
             this.Controls.Add(this.uxHasDueDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.uxDueDateLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.uxDescription);
             this.Controls.Add(this.uxClaimable);
             this.Controls.Add(this.uxPrivacy);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.uxDueDate);
             this.Controls.Add(this.uxTitle);
             this.Controls.Add(this.uxMakeTask);
             this.Controls.Add(this.uxCancel);
@@ -188,13 +190,13 @@
         private System.Windows.Forms.Button uxCancel;
         private System.Windows.Forms.Button uxMakeTask;
         private System.Windows.Forms.TextBox uxTitle;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker uxDueDate;
         private System.Windows.Forms.ComboBox uxPrivacy;
         private System.Windows.Forms.CheckBox uxClaimable;
         private System.Windows.Forms.RichTextBox uxDescription;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label uxDueDateLabel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox uxHasDueDate;

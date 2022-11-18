@@ -9,7 +9,7 @@ namespace ToDoneApp.Models
     {
         public int TaskID { get; }
         public int CreatedByID { get; }
-        public int ClaimedByID { get; }
+        public int? ClaimedByID { get; }
         public string Title { get; }
         public string Description { get; }
         public DateTimeOffset? DueDate { get; }
@@ -18,7 +18,7 @@ namespace ToDoneApp.Models
         public bool IsClaimable { get; }
         public bool IsActive { get; }
 
-        public Task(int taskID, int createdByID, int claimedByID, string title, string description, DateTimeOffset? dueDate, DateTimeOffset? completedOn, int privacyLevel, bool isClaimable, bool isActive)
+        public Task(int taskID, int createdByID, int? claimedByID, string title, string description, DateTimeOffset? dueDate, DateTimeOffset? completedOn, int privacyLevel, bool isClaimable, bool isActive)
         {
             TaskID = taskID;
             CreatedByID = createdByID;

@@ -37,7 +37,7 @@ namespace ToDoneApp.DataDelegates
                     reader.GetString("Title"),
                     reader.GetString("Description"),
                     reader.GetDateTimeOffset("DueDate"),
-                    reader.GetDateTimeOffset("CompletedOn"),
+                    null,
                     reader.GetInt32("PrivacyLevel"),
                     reader.GetValue<bool>("IsClaimable"),
                     reader.GetValue<bool>("IsActive")));

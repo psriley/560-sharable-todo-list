@@ -39,7 +39,7 @@ namespace ToDoneApp
         {
             if (string.IsNullOrEmpty(Title)) throw new ArgumentException($"The Parameter {nameof(Title)} can not be null or empty");
             if (string.IsNullOrEmpty(Description)) throw new ArgumentException($"The Parameter {nameof(Description)} can not be null or empty");
-            if (PrivacyLevel < 1 | PrivacyLevel > 4) throw new ArgumentException($"The Parameter {nameof(PrivacyLevel)} must be a number 1-4");
+            if (PrivacyLevel < 0 | PrivacyLevel > 3) throw new ArgumentException($"The Parameter {nameof(PrivacyLevel)} must be one of the 4 choices provided");
 
 
             var d = new CreateTaskDataDelegate(CreatedByID, ClaimedByID, Title, Description, DueDate, PrivacyLevel, IsClaimable);
