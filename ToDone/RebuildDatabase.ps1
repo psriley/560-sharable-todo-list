@@ -35,7 +35,7 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\
 
 Write-Host "Creating tables..."
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Tables\ToDone.PrivacyLevel.sql"
-Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Tables\ToDone.User.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Tables\ToDone.Users.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Tables\ToDone.FriendsUser.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Tables\ToDone.Task.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Tables\ToDone.TaskComment.sql"
@@ -43,7 +43,8 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Tables\ToDone.GroupUser.sql"
 
 Write-Host "Stored procedures..."
-Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.CreateUser.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.CreateGroup.sql"
 
 Write-Host "Inserting data..."
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Data\ToDone.PrivacyLevelData.sql"

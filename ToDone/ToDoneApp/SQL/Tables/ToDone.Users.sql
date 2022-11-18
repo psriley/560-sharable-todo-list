@@ -6,7 +6,8 @@ Create Table ToDone.Users
 	DisplayName	NVarChar(32) Unique Not Null,
 	PasswordHash NVarChar(32) Not Null,
 	FirstName NVarChar(32) Not Null,
-	LastName NVarChar(32) Not Null
+	LastName NVarChar(32) Not Null,
+	IsAdmin Bit 
 
 	Unique 
 	(

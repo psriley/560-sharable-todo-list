@@ -13,7 +13,6 @@ C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\ne
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.dll
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.pdb
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.genruntimeconfig.cache
-C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.FriendControll.resources
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.MainForm.resources
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.Properties.Resources.resources
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
@@ -25,3 +24,4 @@ C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\ne
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\DataAccess.dll
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\DataAccess.pdb
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.csproj.CopyComplete
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.FriendControl.resources

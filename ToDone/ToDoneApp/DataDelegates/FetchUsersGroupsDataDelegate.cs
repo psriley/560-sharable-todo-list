@@ -1,24 +1,27 @@
-﻿using DataAccess;
-using System;
+﻿using System;
+using DataAccess;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Runtime.CompilerServices;
 using System.Text;
-using ToDoneApp.DataDelegates;
+using System.Data;
 using ToDoneApp.Models;
+using System.Data.SqlClient;
 
 namespace ToDoneApp.DataDelegates
 {
-    internal class FetchGroupsDataDelegate : DataReaderDelegate<IReadOnlyList<Groups>>
+    internal class FetchUsersGroupsDataDelegate : DataReaderDelegate<IReadOnlyList<Groups>>\
     {
-        public FetchGroupsDataDelegate()
-            : base("ToDone.FetchGroups")
+        public readonly int UserID;
+
+        public FetchUsersGroupsDataDelegate(int UserID)
+            : base("ToDone.FetchUsersGroups")
         {
+            this.UserID = UserID;
         }
 
         public override void PrepareCommand(SqlCommand command)
         {
             base.PrepareCommand(command);
+            command.Parameters.AddWithValue("UserID", UserID);
         }
 
         public override IReadOnlyList<Groups> Translate(SqlCommand command, IDataRowReader reader)
@@ -37,3 +40,4 @@ namespace ToDoneApp.DataDelegates
         }
     }
 }
+

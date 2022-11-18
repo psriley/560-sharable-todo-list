@@ -15,5 +15,7 @@ namespace ToDoneApp
 
         IReadOnlyList<Users> FetchGroupsUsers(string DisplayName);
 
+        IReadOnlyList<Groups> FetchUsersGroups(int GroupID);
+
     }
 }
