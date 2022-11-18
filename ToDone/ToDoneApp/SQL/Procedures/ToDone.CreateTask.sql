@@ -2,7 +2,7 @@
 	@CreatedByID INT,
 	@Title NVarChar(64),
 	@Description NVarChar(256),
-	@DueDate Date = '3000-01-01',
+	@DueDate DateTimeOffset = '3000-01-01',
 	@PrivacyLevel Int,
 	@IsClaimable Bit = 0,
 	@TaskID INT OUTPUT

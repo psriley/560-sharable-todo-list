@@ -33,9 +33,9 @@
             // 
             // uxResultsBox
             // 
-            this.uxResultsBox.Location = new System.Drawing.Point(67, 68);
+            this.uxResultsBox.Location = new System.Drawing.Point(0, 0);
             this.uxResultsBox.Name = "uxResultsBox";
-            this.uxResultsBox.Size = new System.Drawing.Size(639, 533);
+            this.uxResultsBox.Size = new System.Drawing.Size(645, 533);
             this.uxResultsBox.TabIndex = 0;
             // 
             // GroupSearchResults

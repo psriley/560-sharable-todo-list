@@ -13,7 +13,7 @@ namespace ToDoneApp.DataDelegates
         private readonly string displayName;
 
         public FetchGroupsUsersDataDelegate(string displayName)
-            : base("ToDone.FetchUsersFriends")
+            : base("ToDone.FetchGroupsUsers")
         {
             this.displayName = displayName;
         }

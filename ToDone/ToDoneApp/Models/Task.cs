@@ -12,13 +12,13 @@ namespace ToDoneApp.Models
         public int ClaimedByID { get; }
         public string Title { get; }
         public string Description { get; }
-        public DateTime DueDate { get; }
-        public DateTimeOffset CompletedOn { get; }
+        public DateTimeOffset? DueDate { get; }
+        public DateTimeOffset? CompletedOn { get; }
         public int PrivacyLevel { get; }
         public bool IsClaimable { get; }
         public bool IsActive { get; }
 
-        public Task(int taskID, int createdByID, int claimedByID, string title, string description, DateTime dueDate, DateTimeOffset completedOn, int privacyLevel, bool isClaimable, bool isActive)
+        public Task(int taskID, int createdByID, int claimedByID, string title, string description, DateTimeOffset? dueDate, DateTimeOffset? completedOn, int privacyLevel, bool isClaimable, bool isActive)
         {
             TaskID = taskID;
             CreatedByID = createdByID;

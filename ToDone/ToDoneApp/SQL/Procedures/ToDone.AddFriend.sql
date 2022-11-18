@@ -1,7 +1,7 @@
 ﻿CREATE OR ALTER PROCEDURE ToDone.AddFriend
 	@UserID INT,
-	@FriendDisplayName NVarChar(32)
+	@FriendID INT
 AS
 INSERT ToDone.FriendsUser(User1, User2)
-VALUES(@UserID, (SELECT U.UserID FROM ToDone.Users U Where U.DisplayName = @FriendDisplayName))
+VALUES(@UserID, @FriendID)
 GO

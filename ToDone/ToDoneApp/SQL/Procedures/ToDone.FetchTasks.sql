@@ -1,0 +1,5 @@
+﻿CREATE OR ALTER PROCEDURE ToDone.FetchTasks
+AS
+SELECT *
+FROM ToDone.Task T
+GO

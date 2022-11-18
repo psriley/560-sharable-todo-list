@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.uxHasDueDate = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // uxCancel
@@ -71,7 +72,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(104, 314);
+            this.dateTimePicker2.Location = new System.Drawing.Point(104, 329);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(449, 23);
             this.dateTimePicker2.TabIndex = 5;
@@ -123,7 +124,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 320);
+            this.label3.Location = new System.Drawing.Point(40, 333);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 15);
             this.label3.TabIndex = 11;
@@ -148,10 +149,21 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Create Task";
             // 
+            // uxHasDueDate
+            // 
+            this.uxHasDueDate.AutoSize = true;
+            this.uxHasDueDate.Location = new System.Drawing.Point(260, 304);
+            this.uxHasDueDate.Name = "uxHasDueDate";
+            this.uxHasDueDate.Size = new System.Drawing.Size(74, 19);
+            this.uxHasDueDate.TabIndex = 14;
+            this.uxHasDueDate.Text = "Due Date";
+            this.uxHasDueDate.UseVisualStyleBackColor = true;
+            // 
             // CreateTaskControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.uxHasDueDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -185,5 +197,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox uxHasDueDate;
     }
 }

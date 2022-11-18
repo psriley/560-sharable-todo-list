@@ -14,7 +14,7 @@ namespace ToDoneApp.DataDelegates
         public readonly int GroupID;
 
         public LeaveGroupDataDelegate(int UserID, int GroupID)
-            : base("ToDone.JoinGroup")
+            : base("ToDone.LeaveGroup")
         {
             this.UserID = UserID;
             this.GroupID = GroupID;
