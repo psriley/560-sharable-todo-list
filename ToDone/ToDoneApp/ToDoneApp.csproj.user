@@ -7,6 +7,15 @@
     <Compile Update="CreateUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GroupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GroupResultsComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GroupSearchResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,6 +23,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FriendControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserResultComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserSearchResults.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

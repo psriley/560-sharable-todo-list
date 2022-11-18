@@ -58,5 +58,11 @@ namespace ToDoneApp
             var d = new FetchUsersGroupsDataDelegate(UserID);
             return executor.ExecuteReader(d);
         }
+
+        public IReadOnlyList<Users> FetchUsers()
+        {
+            var d = new FetchUsersDataDelegate();
+            return executor.ExecuteReader(d);
+        }
     }
 }

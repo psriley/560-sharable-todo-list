@@ -54,3 +54,8 @@ C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\ne
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.LogInForm.resources
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.CreateUserForm.resources
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.CreateTaskControl.resources
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.GroupControl.resources
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.UserSearchResults.resources
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.UserResultComponent.resources
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.GroupResultsComponent.resources
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.GroupSearchResults.resources

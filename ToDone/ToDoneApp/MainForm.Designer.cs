@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.uxMainBox = new System.Windows.Forms.GroupBox();
             this.uxLogOutButton = new System.Windows.Forms.Button();
             this.uxDisplayNameLabel = new System.Windows.Forms.Label();
             this.uxClock = new System.Windows.Forms.Label();
             this.uxMyTasksButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.uxSearchBox = new System.Windows.Forms.TextBox();
+            this.uxSearchParam = new System.Windows.Forms.ComboBox();
             this.uxAddTask = new System.Windows.Forms.Button();
             this.uxAdminButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -43,20 +42,13 @@
             this.Friends = new System.Windows.Forms.Label();
             this.uxGroupsBox = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.uxSearch = new System.Windows.Forms.Button();
+            this.uxMainBox = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
-            // 
-            // uxMainBox
-            // 
-            this.uxMainBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.uxMainBox.Location = new System.Drawing.Point(12, 79);
-            this.uxMainBox.Name = "uxMainBox";
-            this.uxMainBox.Size = new System.Drawing.Size(645, 533);
-            this.uxMainBox.TabIndex = 0;
-            this.uxMainBox.TabStop = false;
             // 
             // uxLogOutButton
             // 
-            this.uxLogOutButton.Location = new System.Drawing.Point(501, 8);
+            this.uxLogOutButton.Location = new System.Drawing.Point(12, 618);
             this.uxLogOutButton.Name = "uxLogOutButton";
             this.uxLogOutButton.Size = new System.Drawing.Size(75, 23);
             this.uxLogOutButton.TabIndex = 1;
@@ -93,30 +85,30 @@
             this.uxMyTasksButton.UseVisualStyleBackColor = true;
             this.uxMyTasksButton.Click += new System.EventHandler(this.uxMyTasksButton_Click);
             // 
-            // textBox1
+            // uxSearchBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 40);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(441, 23);
-            this.textBox1.TabIndex = 9;
+            this.uxSearchBox.Location = new System.Drawing.Point(11, 45);
+            this.uxSearchBox.Margin = new System.Windows.Forms.Padding(2);
+            this.uxSearchBox.Name = "uxSearchBox";
+            this.uxSearchBox.Size = new System.Drawing.Size(367, 23);
+            this.uxSearchBox.TabIndex = 9;
             // 
-            // comboBox1
+            // uxSearchParam
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 15;
-            this.comboBox1.Location = new System.Drawing.Point(456, 40);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(192, 23);
-            this.comboBox1.TabIndex = 10;
+            this.uxSearchParam.FormattingEnabled = true;
+            this.uxSearchParam.ItemHeight = 15;
+            this.uxSearchParam.Location = new System.Drawing.Point(385, 45);
+            this.uxSearchParam.Margin = new System.Windows.Forms.Padding(2);
+            this.uxSearchParam.Name = "uxSearchParam";
+            this.uxSearchParam.Size = new System.Drawing.Size(192, 23);
+            this.uxSearchParam.TabIndex = 10;
             // 
             // uxAddTask
             // 
-            this.uxAddTask.Location = new System.Drawing.Point(11, 621);
+            this.uxAddTask.Location = new System.Drawing.Point(499, 8);
             this.uxAddTask.Margin = new System.Windows.Forms.Padding(2);
             this.uxAddTask.Name = "uxAddTask";
-            this.uxAddTask.Size = new System.Drawing.Size(78, 20);
+            this.uxAddTask.Size = new System.Drawing.Size(78, 23);
             this.uxAddTask.TabIndex = 11;
             this.uxAddTask.Text = "Add Task";
             this.uxAddTask.UseVisualStyleBackColor = true;
@@ -169,24 +161,42 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Groups:";
             // 
+            // uxSearch
+            // 
+            this.uxSearch.Location = new System.Drawing.Point(582, 45);
+            this.uxSearch.Name = "uxSearch";
+            this.uxSearch.Size = new System.Drawing.Size(75, 23);
+            this.uxSearch.TabIndex = 19;
+            this.uxSearch.Text = "Search";
+            this.uxSearch.UseVisualStyleBackColor = true;
+            this.uxSearch.Click += new System.EventHandler(this.uxSearch_Click);
+            // 
+            // uxMainBox
+            // 
+            this.uxMainBox.Location = new System.Drawing.Point(11, 79);
+            this.uxMainBox.Name = "uxMainBox";
+            this.uxMainBox.Size = new System.Drawing.Size(645, 533);
+            this.uxMainBox.TabIndex = 20;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 653);
+            this.Controls.Add(this.uxMainBox);
+            this.Controls.Add(this.uxSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.uxGroupsBox);
             this.Controls.Add(this.Friends);
             this.Controls.Add(this.uxFriendsBox);
             this.Controls.Add(this.uxAdminButton);
             this.Controls.Add(this.uxAddTask);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.uxSearchParam);
+            this.Controls.Add(this.uxSearchBox);
             this.Controls.Add(this.uxMyTasksButton);
             this.Controls.Add(this.uxClock);
             this.Controls.Add(this.uxDisplayNameLabel);
             this.Controls.Add(this.uxLogOutButton);
-            this.Controls.Add(this.uxMainBox);
             this.Name = "MainForm";
             this.Text = "To Done ";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -196,14 +206,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox uxMainBox;
         private System.Windows.Forms.Button uxLogOutButton;
         private System.Windows.Forms.Label uxDisplayNameLabel;
         private System.Windows.Forms.Label uxClock;
         private System.Windows.Forms.Button uxMyTasksButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox uxSearchBox;
+        private System.Windows.Forms.ComboBox uxSearchParam;
         private System.Windows.Forms.Button uxAddTask;
         private System.Windows.Forms.Button uxAdminButton;
         private System.Windows.Forms.Timer timer1;
@@ -211,5 +219,7 @@
         private System.Windows.Forms.Label Friends;
         private System.Windows.Forms.FlowLayoutPanel uxGroupsBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button uxSearch;
+        private System.Windows.Forms.FlowLayoutPanel uxMainBox;
     }
 }

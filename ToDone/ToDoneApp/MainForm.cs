@@ -29,7 +29,11 @@ namespace ToDoneApp
 
         private void LoadFormLabels()
         {
+            timer1.Start();
             uxDisplayNameLabel.Text = user.DisplayName;
+            uxSearchParam.Items.Add("User");
+            uxSearchParam.Items.Add("Task");
+            uxSearchParam.Items.Add("Group");
         }
 
         private void ShowAdminButton()
@@ -52,11 +56,15 @@ namespace ToDoneApp
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            timer1.Start();
             IReadOnlyList<Users> friends = new SqlUsersRepository(connectionString).FetchUsersFriends(user.UserID);
             foreach(Users u in friends)
             {
                 uxFriendsBox.Controls.Add(new FriendControl(u));
+            }
+            IReadOnlyList<Groups> groups = new SqlUsersRepository(connectionString).FetchUsersGroups(user.UserID);
+            foreach(Groups g in groups)
+            {
+                uxGroupsBox.Controls.Add(new GroupControl(g));
             }
         }
 
@@ -69,6 +77,60 @@ namespace ToDoneApp
         private void uxLogOutButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void uxSearch_Click(object sender, EventArgs e)
+        {
+            uxMainBox.Controls.Clear();
+            switch (uxSearchParam.Text)
+            {
+                case "User":
+                    try
+                    {
+                        IReadOnlyList<Users> users = new SqlUsersRepository(connectionString).FetchUsers();
+                        List<Users> results = new List<Users>();
+                        foreach(Users u in users)
+                        {
+                            if (u.DisplayName.ToLower().Contains(uxSearchBox.Text.ToLower()))
+                            {
+                                if(u.UserID != user.UserID)
+                                {
+                                    results.Add(u);
+                                }
+                            }
+                        }
+                        uxMainBox.Controls.Add(new UserSearchResults(results, user, connectionString));
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("User not found! Please check spelling.");
+                    }
+                    break;
+                case "Group":
+                    try
+                    {
+                        IReadOnlyList<Groups> groups = new SqlGroupsRepository(connectionString).FetchGroups();
+                        List<Groups> results = new List<Groups>();
+                        foreach(Groups g in groups)
+                        {
+                            if (g.Title.ToLower().Contains(uxSearchBox.Text.ToLower()))
+                            {
+                                results.Add(g);
+                            }
+                        }
+                        uxMainBox.Controls.Add(new GroupSearchResults(results, user, connectionString));
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Group not found! Please check spelling.");
+                    }
+                    break;
+                case "Task":
+                    break;
+                default:
+                    MessageBox.Show("Please Select a Search Parameter!");
+                    break;
+            }
         }
     }
 }
