@@ -5,6 +5,8 @@ using System.Text;
 using System.Data;
 using ToDoneApp.Models;
 using System.Data.SqlClient;
+using System.Windows.Forms;
+
 namespace ToDoneApp.DataDelegates
 {
     internal class GetUserDataDelegate : DataReaderDelegate<Users>
@@ -26,8 +28,8 @@ namespace ToDoneApp.DataDelegates
 
         public override Users Translate(SqlCommand command, IDataRowReader reader)
         {
-            if(!reader.Read())
-            throw new RecordNotFoundException($"User {displayName} not found");
+            if(!reader.Read()) return null;
+                
 
             return new Users(
                 reader.GetInt32("UserID"), 

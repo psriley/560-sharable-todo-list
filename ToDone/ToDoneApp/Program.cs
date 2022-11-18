@@ -14,7 +14,7 @@ namespace ToDoneApp
         [STAThread]
         static void Main()
         {
-            string connectionString = @"Server=DESKTOP-NMTPVO5\SQLEXPRESS;Database=ToDone;Integrated Security=SSPI;";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDb;Database=ToDone;Integrated Security=SSPI;";
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

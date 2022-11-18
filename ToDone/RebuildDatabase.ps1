@@ -20,8 +20,8 @@ Write-Host "Rebuilding database $Database on $Server..."
 <#
    If on your local machine, you can drop and re-create the database.
 #>
-& ".\Scripts\DropDatabase.ps1" -Database $Database
-& ".\Scripts\CreateDatabase.ps1" -Database $Database
+& ".\DropDatabase.ps1" -Database $Database
+& ".\CreateDatabase.ps1" -Database $Database
 
 <#
    If on the department's server, you don't have permissions to drop or create databases.
@@ -45,6 +45,24 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\
 Write-Host "Stored procedures..."
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.CreateUser.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.CreateGroup.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.AddFriend.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.ClaimTask.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.CompleteTask.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.CreateTask.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.CreateTaskComment.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.DeleteTask.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchGroups.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchGroupsUsers.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchTasks.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchUsers.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchUsersFriends.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchUsersGroups.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchUserTasks.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.GetGroup.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.GetUser.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.JoinGroup.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.LeaveGroup.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.RemoveFriend.sql"
 
 Write-Host "Inserting data..."
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Data\ToDone.PrivacyLevelData.sql"

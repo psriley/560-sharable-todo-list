@@ -3,6 +3,6 @@ BEGIN
 Create Table ToDone.PrivacyLevel
 (
 	PrivacyID Int Primary Key,
-	PrivacyType NVarChar(32) Not Null
+	PrivacyType NVarChar(64) Not Null
 );
 End;

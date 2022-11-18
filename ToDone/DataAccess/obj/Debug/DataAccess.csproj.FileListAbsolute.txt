@@ -9,3 +9,9 @@ C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\D
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\kenzi\source\repos\560-sharable-todo-list\ToDone\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\kenzi\source\repos\560-sharable-todo-list\ToDone\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\kenzi\source\repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\kenzi\source\repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\kenzi\source\repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\kenzi\source\repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.pdb

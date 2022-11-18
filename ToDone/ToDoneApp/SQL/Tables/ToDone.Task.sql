@@ -3,10 +3,11 @@ BEGIN
 Create Table ToDone.Task
 (
 	TaskID Int Identity(1, 1) Primary Key,
-	UserID Int Foreign Key References ToDone.Users(UserID),
+	CreatedByID Int Foreign Key References ToDone.Users(UserID),
+	ClaimedByID Int Default 0,
 	Title NVarChar(64) Not Null,
-	[Description] NVarChar(256) Not Null,
-	DueDate Date,
+	[Description] NVarChar(1024) Not Null,
+	DueDate DateTimeOffset,
 	CompletedOn DateTimeOffset,
 	PrivacyLevel Int Foreign Key References ToDone.PrivacyLevel(PrivacyID),
 	IsClaimable Bit Not Null Default 0,
