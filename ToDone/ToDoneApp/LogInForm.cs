@@ -10,9 +10,24 @@ namespace ToDoneApp
 {
     public partial class LogInForm : Form
     {
-        public LogInForm()
+        private readonly string connectionString;
+        public LogInForm(string connectionString)
         {
+            this.connectionString = connectionString;
             InitializeComponent();
+        }
+
+        private void onSignUpClick(object sender, EventArgs e)
+        {
+            CreateUserForm c = new CreateUserForm(connectionString);
+            this.Hide();
+            c.ShowDialog();
+            this.Show();
+        }
+
+        private void onLogInClick(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -54,6 +54,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Sign Up";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.onSignUpClick);
             // 
             // textBox1
             // 

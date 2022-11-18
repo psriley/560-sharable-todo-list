@@ -49,21 +49,18 @@
             // 
             // uxMainBox
             // 
-            this.uxMainBox.Location = new System.Drawing.Point(17, 131);
-            this.uxMainBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxMainBox.Location = new System.Drawing.Point(12, 79);
             this.uxMainBox.Name = "uxMainBox";
-            this.uxMainBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uxMainBox.Size = new System.Drawing.Size(921, 889);
+            this.uxMainBox.Size = new System.Drawing.Size(645, 533);
             this.uxMainBox.TabIndex = 0;
             this.uxMainBox.TabStop = false;
             this.uxMainBox.Text = "Title";
             // 
             // uxLogOutButton
             // 
-            this.uxLogOutButton.Location = new System.Drawing.Point(716, 14);
-            this.uxLogOutButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxLogOutButton.Location = new System.Drawing.Point(501, 8);
             this.uxLogOutButton.Name = "uxLogOutButton";
-            this.uxLogOutButton.Size = new System.Drawing.Size(107, 38);
+            this.uxLogOutButton.Size = new System.Drawing.Size(75, 23);
             this.uxLogOutButton.TabIndex = 1;
             this.uxLogOutButton.Text = "Log Out";
             this.uxLogOutButton.UseVisualStyleBackColor = true;
@@ -71,19 +68,17 @@
             // uxDisplayNameLabel
             // 
             this.uxDisplayNameLabel.AutoSize = true;
-            this.uxDisplayNameLabel.Location = new System.Drawing.Point(17, 20);
-            this.uxDisplayNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxDisplayNameLabel.Location = new System.Drawing.Point(12, 12);
             this.uxDisplayNameLabel.Name = "uxDisplayNameLabel";
-            this.uxDisplayNameLabel.Size = new System.Drawing.Size(122, 25);
+            this.uxDisplayNameLabel.Size = new System.Drawing.Size(80, 15);
             this.uxDisplayNameLabel.TabIndex = 2;
             this.uxDisplayNameLabel.Text = "Display Name";
             // 
             // uxClock
             // 
-            this.uxClock.Location = new System.Drawing.Point(1130, 21);
-            this.uxClock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uxClock.Location = new System.Drawing.Point(791, 13);
             this.uxClock.Name = "uxClock";
-            this.uxClock.Size = new System.Drawing.Size(200, 25);
+            this.uxClock.Size = new System.Drawing.Size(140, 15);
             this.uxClock.TabIndex = 3;
             this.uxClock.Text = "Clock";
             this.uxClock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -91,11 +86,9 @@
             // uxFriendsBox
             // 
             this.uxFriendsBox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uxFriendsBox.Location = new System.Drawing.Point(947, 58);
-            this.uxFriendsBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxFriendsBox.Location = new System.Drawing.Point(663, 35);
             this.uxFriendsBox.Name = "uxFriendsBox";
-            this.uxFriendsBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uxFriendsBox.Size = new System.Drawing.Size(383, 451);
+            this.uxFriendsBox.Size = new System.Drawing.Size(268, 271);
             this.uxFriendsBox.TabIndex = 4;
             this.uxFriendsBox.TabStop = false;
             this.uxFriendsBox.Text = "Friends";
@@ -103,21 +96,18 @@
             // uxGroupBox
             // 
             this.uxGroupBox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uxGroupBox.Location = new System.Drawing.Point(947, 577);
-            this.uxGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxGroupBox.Location = new System.Drawing.Point(663, 346);
             this.uxGroupBox.Name = "uxGroupBox";
-            this.uxGroupBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uxGroupBox.Size = new System.Drawing.Size(383, 443);
+            this.uxGroupBox.Size = new System.Drawing.Size(268, 266);
             this.uxGroupBox.TabIndex = 5;
             this.uxGroupBox.TabStop = false;
             this.uxGroupBox.Text = "Groups";
             // 
             // uxMyTasksButton
             // 
-            this.uxMyTasksButton.Location = new System.Drawing.Point(831, 14);
-            this.uxMyTasksButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxMyTasksButton.Location = new System.Drawing.Point(582, 8);
             this.uxMyTasksButton.Name = "uxMyTasksButton";
-            this.uxMyTasksButton.Size = new System.Drawing.Size(107, 38);
+            this.uxMyTasksButton.Size = new System.Drawing.Size(75, 23);
             this.uxMyTasksButton.TabIndex = 6;
             this.uxMyTasksButton.Text = "My Tasks";
             this.uxMyTasksButton.UseVisualStyleBackColor = true;
@@ -125,75 +115,73 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(947, 1030);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(663, 618);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(165, 38);
+            this.button3.Size = new System.Drawing.Size(116, 23);
             this.button3.TabIndex = 7;
             this.button3.Text = "Add Group";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1165, 1030);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(816, 618);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(165, 38);
+            this.button4.Size = new System.Drawing.Size(116, 23);
             this.button4.TabIndex = 8;
             this.button4.Text = "Remove Group";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(17, 66);
+            this.textBox1.Location = new System.Drawing.Point(12, 40);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(628, 31);
+            this.textBox1.Size = new System.Drawing.Size(441, 23);
             this.textBox1.TabIndex = 9;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 25;
-            this.comboBox1.Location = new System.Drawing.Point(651, 66);
+            this.comboBox1.ItemHeight = 15;
+            this.comboBox1.Location = new System.Drawing.Point(456, 40);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(273, 33);
+            this.comboBox1.Size = new System.Drawing.Size(192, 23);
             this.comboBox1.TabIndex = 10;
             // 
             // uxAddTask
             // 
-            this.uxAddTask.Location = new System.Drawing.Point(17, 1028);
+            this.uxAddTask.Location = new System.Drawing.Point(12, 617);
+            this.uxAddTask.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxAddTask.Name = "uxAddTask";
-            this.uxAddTask.Size = new System.Drawing.Size(112, 34);
+            this.uxAddTask.Size = new System.Drawing.Size(78, 20);
             this.uxAddTask.TabIndex = 11;
             this.uxAddTask.Text = "Add Task";
             this.uxAddTask.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(946, 519);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Location = new System.Drawing.Point(662, 311);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(165, 38);
+            this.button6.Size = new System.Drawing.Size(116, 23);
             this.button6.TabIndex = 12;
             this.button6.Text = "Add Friend";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(1165, 519);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button7.Location = new System.Drawing.Point(816, 311);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(165, 38);
+            this.button7.Size = new System.Drawing.Size(116, 23);
             this.button7.TabIndex = 13;
             this.button7.Text = "Remove Friend";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // uxAdminButton
             // 
-            this.uxAdminButton.Location = new System.Drawing.Point(947, 14);
-            this.uxAdminButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxAdminButton.Location = new System.Drawing.Point(663, 8);
             this.uxAdminButton.Name = "uxAdminButton";
-            this.uxAdminButton.Size = new System.Drawing.Size(166, 38);
+            this.uxAdminButton.Size = new System.Drawing.Size(116, 23);
             this.uxAdminButton.TabIndex = 14;
             this.uxAdminButton.Text = "Admin Settings";
             this.uxAdminButton.UseVisualStyleBackColor = true;
@@ -204,9 +192,9 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1347, 1088);
+            this.ClientSize = new System.Drawing.Size(943, 653);
             this.Controls.Add(this.uxAdminButton);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -222,9 +210,8 @@
             this.Controls.Add(this.uxDisplayNameLabel);
             this.Controls.Add(this.uxLogOutButton);
             this.Controls.Add(this.uxMainBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "To Done ";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

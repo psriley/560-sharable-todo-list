@@ -14,10 +14,11 @@ namespace ToDoneApp
         [STAThread]
         static void Main()
         {
+            string connectionString = @"Server=DESKTOP-NMTPVO5\SQLEXPRESS;Database=ToDone;Integrated Security=SSPI;";
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new LogInForm(connectionString));
         }
     }
 }
