@@ -51,3 +51,4 @@ E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDon
 E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.pdb
 E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.genruntimeconfig.cache
 C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.FriendControl.resources
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.LogInForm.resources
