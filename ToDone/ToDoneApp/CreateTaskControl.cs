@@ -5,16 +5,19 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using ToDoneApp.Models;
 
 namespace ToDoneApp
 {
-    public partial class FriendControl : UserControl
+    public partial class CreateTaskControl : UserControl
     {
-        public FriendControl(Users u)
+        public CreateTaskControl()
         {
             InitializeComponent();
-            uxFriendName.Text = u.DisplayName;
+        }
+
+        private void uxCancel_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls.Remove(this);
         }
     }
 }

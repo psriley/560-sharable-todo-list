@@ -35,11 +35,11 @@ namespace ToDoneApp
             return executor.ExecuteReader(d);
         }
 
-        public IReadOnlyList<Users> FetchUsersFriends(string displayName)
+        public IReadOnlyList<Users> FetchUsersFriends(int UserID)
         {
-            if (string.IsNullOrEmpty(displayName)) throw new ArgumentException($"The parameter {nameof(displayName)} cannot be null or empty");
+            if (UserID < 1) throw new ArgumentException($"The parameter {nameof(UserID)} cannot be less than 1");
 
-            var d = new FetchUsersFriendsDataDelegate(displayName);
+            var d = new FetchUsersFriendsDataDelegate(UserID);
             return executor.ExecuteReader(d);
         }
 

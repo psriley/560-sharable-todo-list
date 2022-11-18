@@ -30,8 +30,8 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.uxDisplayName = new System.Windows.Forms.TextBox();
+            this.uxPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Log In";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.onLogInClick);
             // 
             // button2
             // 
@@ -56,19 +57,19 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.onSignUpClick);
             // 
-            // textBox1
+            // uxDisplayName
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 23);
-            this.textBox1.TabIndex = 2;
+            this.uxDisplayName.Location = new System.Drawing.Point(12, 50);
+            this.uxDisplayName.Name = "uxDisplayName";
+            this.uxDisplayName.Size = new System.Drawing.Size(172, 23);
+            this.uxDisplayName.TabIndex = 2;
             // 
-            // textBox2
+            // uxPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 23);
-            this.textBox2.TabIndex = 3;
+            this.uxPassword.Location = new System.Drawing.Point(12, 94);
+            this.uxPassword.Name = "uxPassword";
+            this.uxPassword.Size = new System.Drawing.Size(172, 23);
+            this.uxPassword.TabIndex = 3;
             // 
             // label1
             // 
@@ -105,8 +106,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.uxPassword);
+            this.Controls.Add(this.uxDisplayName);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -120,8 +121,8 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox uxDisplayName;
+        private System.Windows.Forms.TextBox uxPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

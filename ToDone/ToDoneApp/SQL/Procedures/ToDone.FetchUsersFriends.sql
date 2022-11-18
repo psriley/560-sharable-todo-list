@@ -1,12 +1,7 @@
 ﻿CREATE OR ALTER PROCEDURE ToDone.FetchUsersFriends
-	@DisplayName NVarChar(32)
+	@UserID INT
 AS
-SELECT *
-FROM ToDone.Users US
-WHERE US.UserID =
-(SELECT 
-CASE WHEN F.User1 = U.UserID Then F.User2 ELSE F.User1 END
+SELECT U.UserID, U.DisplayName, U.FirstName, U.LastName, U.IsAdmin
 FROM ToDone.Users U
-INNER JOIN ToDone.FriendsUser F on U.UserID = F.User1 OR U.UserId = F.User2
-WHERE U.DisplayName = @DisplayName)
+INNER JOIN ToDone.FriendsUser F ON (F.User1 = @UserID AND F.User2 = U.UserID) OR (F.User2 = @UserID AND F.User1 = U.UserID)
 GO

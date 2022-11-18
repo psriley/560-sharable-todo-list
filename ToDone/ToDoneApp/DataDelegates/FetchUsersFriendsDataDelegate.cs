@@ -10,19 +10,19 @@ namespace ToDoneApp.DataDelegates
 {
     internal class FetchUsersFriendsDataDelegate : DataReaderDelegate<IReadOnlyList<Users>>
     {
-        private readonly string displayName;
+        private readonly int UserID;
 
-        public FetchUsersFriendsDataDelegate(string displayName)
+        public FetchUsersFriendsDataDelegate(int UserID)
             : base("ToDone.FetchUsersFriends")
         {
-            this.displayName = displayName;
+            this.UserID = UserID;
         }
 
         public override void PrepareCommand(SqlCommand command)
         {
             base.PrepareCommand(command);
 
-            command.Parameters.AddWithValue("DisplayName", displayName);
+            command.Parameters.AddWithValue("UserID", UserID);
         }
 
         public override IReadOnlyList<Users> Translate(SqlCommand command, IDataRowReader reader)
@@ -32,8 +32,8 @@ namespace ToDoneApp.DataDelegates
             while (reader.Read())
             {
                 friends.Add(new Users(
-                    reader.GetInt32("UserID"),
-                    displayName,
+                    UserID,
+                    reader.GetString("DisplayName"),
                     reader.GetString("PasswordHash"),
                     reader.GetString("FirstName"),
                     reader.GetString("LastName"),
