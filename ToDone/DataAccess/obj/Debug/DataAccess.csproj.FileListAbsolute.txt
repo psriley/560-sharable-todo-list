@@ -3,3 +3,9 @@ E:\GitHub\Repositories\560Project\ToDone\DataAccess\bin\Debug\DataAccess.pdb
 E:\GitHub\Repositories\560Project\ToDone\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 E:\GitHub\Repositories\560Project\ToDone\DataAccess\obj\Debug\DataAccess.dll
 E:\GitHub\Repositories\560Project\ToDone\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\chrbe\source\Repos\560-sharable-todo-list\ToDone\DataAccess\obj\Debug\DataAccess.pdb

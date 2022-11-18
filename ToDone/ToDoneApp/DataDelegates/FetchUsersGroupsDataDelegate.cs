@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace ToDoneApp.DataDelegates
 {
-    internal class FetchUsersGroupsDataDelegate : DataReaderDelegate<IReadOnlyList<Groups>>\
+    internal class FetchUsersGroupsDataDelegate : DataReaderDelegate<IReadOnlyList<Groups>>
     {
         public readonly int UserID;
 

@@ -50,5 +50,13 @@ namespace ToDoneApp
             var d = new FetchGroupsUsersDataDelegate(displayName);
             return executor.ExecuteReader(d);
         }
+
+        public IReadOnlyList<Groups> FetchUsersGroups(int UserID)
+        {
+            if (UserID < 1) throw new ArgumentException($"The parameter {nameof(UserID)} cannot be less than 1");
+
+            var d = new FetchUsersGroupsDataDelegate(UserID);
+            return executor.ExecuteReader(d);
+        }
     }
 }
