@@ -46,6 +46,8 @@ namespace ToDoneApp
         {
             uxMainBox.Text = uxMyTasksButton.Text;
             MainForm_Load(this, e);
+            uxSearchBox.Text = "";
+            uxSearchParam.Text = "";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -56,6 +58,9 @@ namespace ToDoneApp
 
         public void MainForm_Load(object sender, EventArgs e)
         {
+            uxFriendsBox.Controls.Clear();
+            uxGroupsBox.Controls.Clear();
+            uxMainBox.Controls.Clear();
             IReadOnlyList<Users> friends = new SqlUsersRepository(connectionString).FetchUsersFriends(user.UserID);
             foreach(Users u in friends)
             {
@@ -132,6 +137,23 @@ namespace ToDoneApp
                     }
                     break;
                 case "Task":
+                    try
+                    {
+                        IReadOnlyList<Models.Task> tasks = new SqlTaskRepository(connectionString).FetchTasks();
+                        List<Models.Task> results = new List<Models.Task>();
+                        foreach (Models.Task task in tasks)
+                        {
+                            if (task.Title.ToLower().Contains(uxSearchBox.Text.ToLower()))
+                            {
+                                results.Add(task);
+                            }
+                        }
+                        uxMainBox.Controls.Add(new TaskSearchResults(results, user, connectionString));
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Task not found! Please check spelling.");
+                    }
                     break;
                 default:
                     MessageBox.Show("Please Select a Search Parameter!");

@@ -32,6 +32,7 @@
             this.uxComplete = new System.Windows.Forms.Button();
             this.uxComment = new System.Windows.Forms.Button();
             this.uxDelete = new System.Windows.Forms.Button();
+            this.uxCompleted = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // uxTitle
@@ -54,7 +55,7 @@
             // 
             // uxComment
             // 
-            this.uxComment.Location = new System.Drawing.Point(449, 3);
+            this.uxComment.Location = new System.Drawing.Point(447, 3);
             this.uxComment.Name = "uxComment";
             this.uxComment.Size = new System.Drawing.Size(113, 23);
             this.uxComment.TabIndex = 2;
@@ -64,7 +65,7 @@
             // 
             // uxDelete
             // 
-            this.uxDelete.Location = new System.Drawing.Point(567, 3);
+            this.uxDelete.Location = new System.Drawing.Point(564, 3);
             this.uxDelete.Name = "uxDelete";
             this.uxDelete.Size = new System.Drawing.Size(75, 23);
             this.uxDelete.TabIndex = 3;
@@ -72,16 +73,25 @@
             this.uxDelete.UseVisualStyleBackColor = true;
             this.uxDelete.Click += new System.EventHandler(this.uxDelete_Click);
             // 
+            // uxCompleted
+            // 
+            this.uxCompleted.AutoSize = true;
+            this.uxCompleted.Location = new System.Drawing.Point(170, 7);
+            this.uxCompleted.Name = "uxCompleted";
+            this.uxCompleted.Size = new System.Drawing.Size(0, 15);
+            this.uxCompleted.TabIndex = 4;
+            // 
             // TaskControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.uxCompleted);
             this.Controls.Add(this.uxDelete);
             this.Controls.Add(this.uxComment);
             this.Controls.Add(this.uxComplete);
             this.Controls.Add(this.uxTitle);
             this.Name = "TaskControl";
-            this.Size = new System.Drawing.Size(645, 30);
+            this.Size = new System.Drawing.Size(642, 30);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,5 +103,6 @@
         private System.Windows.Forms.Button uxComplete;
         private System.Windows.Forms.Button uxComment;
         private System.Windows.Forms.Button uxDelete;
+        private System.Windows.Forms.Label uxCompleted;
     }
 }

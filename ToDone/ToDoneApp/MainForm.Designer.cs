@@ -81,7 +81,7 @@
             this.uxMyTasksButton.Name = "uxMyTasksButton";
             this.uxMyTasksButton.Size = new System.Drawing.Size(75, 23);
             this.uxMyTasksButton.TabIndex = 6;
-            this.uxMyTasksButton.Text = "Home";
+            this.uxMyTasksButton.Text = "Refresh";
             this.uxMyTasksButton.UseVisualStyleBackColor = true;
             this.uxMyTasksButton.Click += new System.EventHandler(this.uxMyTasksButton_Click);
             // 

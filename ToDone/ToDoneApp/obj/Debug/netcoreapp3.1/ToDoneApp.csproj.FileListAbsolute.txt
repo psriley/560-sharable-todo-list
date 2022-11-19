@@ -131,3 +131,4 @@ C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\bin\Debug\netcoreapp3.1\
 C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.csproj.CopyComplete
 C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.genruntimeconfig.cache
 C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.TaskCommentControl.resources
+C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.TaskSearchResults.resources

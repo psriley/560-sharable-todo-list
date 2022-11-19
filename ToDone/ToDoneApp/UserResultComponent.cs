@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ToDoneApp.Models;
@@ -25,9 +26,22 @@ namespace ToDoneApp
 
         private void uxAddFriend_Click(object sender, EventArgs e)
         {
-            new SqlFriendsRepository(connectionString).AddFriend(caller.UserID, friend.UserID);
-            ((MainForm)this.Parent).MainForm_Load(this, e);
-            this.Parent.Controls.Remove(this);
+            IReadOnlyList<Users> friends = new SqlUsersRepository(connectionString).FetchUsersFriends(caller.UserID);
+            List<int> ids = new List<int>();
+            foreach(Users u in friends)
+            {
+                ids.Add(u.UserID);
+            }
+            if (!(ids.Contains(friend.UserID)))
+            {
+                new SqlFriendsRepository(connectionString).AddFriend(caller.UserID, friend.UserID);
+                var x = (this.Parent.Parent.Parent.Parent).Name;
+                this.Parent.Controls.Remove(this);
+            }
+            else
+            {
+                MessageBox.Show("You are already frields with this user!");
+            }
         }
     }
 }

@@ -41,9 +41,8 @@ namespace ToDoneApp
 
         private void uxMakeTask_Click(object sender, EventArgs e)
         {
-            new SqlTaskRepository(connectionString).CreateTask(u.UserID, 0, uxTitle.Text, uxDescription.Text, uxDueDate.Value, uxPrivacy.SelectedIndex+1, uxClaimable.Checked);
+            new SqlTaskRepository(connectionString).CreateTask(u.UserID, 0, uxTitle.Text, uxDescription.Text, uxDueDate.Value, uxPrivacy.SelectedIndex, uxClaimable.Checked);
             ((MainForm)this.Parent.Parent).MainForm_Load(this, e);
-            this.Parent.Controls.Remove(this);
         }
     }
 }

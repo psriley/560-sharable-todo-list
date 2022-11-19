@@ -21,6 +21,10 @@ namespace ToDoneApp
             this.task = task;
             this.connectionString = connectionString;
             uxTitle.Text = task.Title;
+            if(task.CompletedOn != null)
+            {
+                uxCompleted.Text = ($"Completed:{task.CompletedOn.ToString().Substring(0,19)}");
+            }
         }
 
         private void uxComplete_Click(object sender, EventArgs e)
