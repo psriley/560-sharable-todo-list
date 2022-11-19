@@ -27,14 +27,13 @@ namespace ToDoneApp.DataDelegates
 
         public override IReadOnlyList<Users> Translate(SqlCommand command, IDataRowReader reader)
         {
-            var friends = new List<Users>();
-
+            List<Users> friends = new List<Users>();
             while (reader.Read())
             {
                 friends.Add(new Users(
-                    UserID,
+                    reader.GetInt32("UserID"),
                     reader.GetString("DisplayName"),
-                    reader.GetString("PasswordHash"),
+                    "0",
                     reader.GetString("FirstName"),
                     reader.GetString("LastName"),
                     reader.GetValue<bool>("IsAdmin")));
