@@ -6,7 +6,7 @@ using System.Data;
 using ToDoneApp.Models;
 using System.Data.SqlClient;
 
-namespace ToDoneApp
+namespace ToDoneApp.Interfaces
 {
     public interface IGroupUserRepository
     {

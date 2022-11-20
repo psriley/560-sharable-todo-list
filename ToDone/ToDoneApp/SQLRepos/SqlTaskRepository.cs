@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using ToDoneApp.DataDelegates;
+using ToDoneApp.Interfaces;
 using ToDoneApp.Models;
 
-namespace ToDoneApp
+namespace ToDoneApp.SQLRepos
 {
     internal class SqlTaskRepository : ITaskRepository
     {
@@ -35,7 +36,7 @@ namespace ToDoneApp
             return executor.ExecuteNonQuery(d);
         }
 
-        public ToDoneApp.Models.Task CreateTask(int CreatedByID, int ClaimedByID, string Title, string Description, DateTimeOffset DueDate, int PrivacyLevel, bool IsClaimable)
+        public Models.Task CreateTask(int CreatedByID, int ClaimedByID, string Title, string Description, DateTimeOffset DueDate, int PrivacyLevel, bool IsClaimable)
         {
             if (string.IsNullOrEmpty(Title)) throw new ArgumentException($"The Parameter {nameof(Title)} can not be null or empty");
             if (string.IsNullOrEmpty(Description)) throw new ArgumentException($"The Parameter {nameof(Description)} can not be null or empty");
@@ -55,13 +56,13 @@ namespace ToDoneApp
             return executor.ExecuteNonQuery(d);
         }
 
-        public IReadOnlyList<ToDoneApp.Models.Task> FetchTasks()
+        public IReadOnlyList<Models.Task> FetchTasks()
         {
             var d = new FetchTasksDataDelegate();
             return executor.ExecuteReader(d);
         }
 
-        public IReadOnlyList<ToDoneApp.Models.Task> FetchUserTasks(int UserID)
+        public IReadOnlyList<Models.Task> FetchUserTasks(int UserID)
         {
             if (UserID < 1) throw new ArgumentOutOfRangeException($"The Parameter {nameof(UserID)} can not be less than 1");
 

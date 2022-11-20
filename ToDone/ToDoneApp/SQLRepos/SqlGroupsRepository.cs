@@ -3,11 +3,11 @@ using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Text;
-using ToDoneApp;
 using ToDoneApp.DataDelegates;
+using ToDoneApp.Interfaces;
 using ToDoneApp.Models;
 
-namespace ToDoneApp
+namespace ToDoneApp.SQLRepos
 {
     internal class SqlGroupsRepository : IGroupsRepository
     {
@@ -35,7 +35,7 @@ namespace ToDoneApp
 
         public Groups GetGroup(int GroupID)
         {
-            if(GroupID < 0) throw new ArgumentException($" The Parameter {nameof(GroupID)} can not be less than 0");
+            if (GroupID < 0) throw new ArgumentException($" The Parameter {nameof(GroupID)} can not be less than 0");
 
             var d = new GetGroupDataDelegate(GroupID);
             return executor.ExecuteReader(d);

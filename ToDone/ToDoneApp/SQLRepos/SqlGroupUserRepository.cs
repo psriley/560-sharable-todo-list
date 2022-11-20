@@ -6,8 +6,9 @@ using System.Data;
 using ToDoneApp.Models;
 using System.Data.SqlClient;
 using ToDoneApp.DataDelegates;
+using ToDoneApp.Interfaces;
 
-namespace ToDoneApp
+namespace ToDoneApp.SQLRepos
 {
     internal class SqlGroupUserRepository : IGroupUserRepository
     {

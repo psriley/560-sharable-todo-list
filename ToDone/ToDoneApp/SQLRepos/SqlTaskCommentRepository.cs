@@ -5,9 +5,10 @@ using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
 using System.Text;
 using ToDoneApp.DataDelegates;
+using ToDoneApp.Interfaces;
 using ToDoneApp.Models;
 
-namespace ToDoneApp
+namespace ToDoneApp.SQLRepos
 {
     internal class SqlTaskCommentRepository : ITaskCommentRepository
     {

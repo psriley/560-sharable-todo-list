@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using ToDoneApp.Models;
 
-namespace ToDoneApp
+namespace ToDoneApp.Interfaces
 {
     public interface IGroupsRepository
     {

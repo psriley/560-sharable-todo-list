@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using ToDoneApp.Models;
 using ToDoneApp.DataDelegates;
+using ToDoneApp.Interfaces;
 
-namespace ToDoneApp
+namespace ToDoneApp.SQLRepos
 {
     internal class SqlFriendsRepository : IFriendsRepository
     {

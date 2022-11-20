@@ -7,7 +7,7 @@ using ToDoneApp.Models;
 using System.Data.SqlClient;
 using ToDoneApp.DataDelegates;
 
-namespace ToDoneApp
+namespace ToDoneApp.Interfaces
 {
     public interface IFriendsRepository
     {

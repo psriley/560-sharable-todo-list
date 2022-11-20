@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using ToDoneApp.Models;
 
-namespace ToDoneApp
+namespace ToDoneApp.Interfaces
 {
     public interface IUsersRepository
     {
         Users CreateUser(string DisplayName, string Password, string FirstName, string LastName, bool IsAdmin);
 
-        Users GetUser(string DisplayName);        
+        Users GetUser(string DisplayName);
 
         IReadOnlyList<Users> FetchUsersFriends(int UserID);
 

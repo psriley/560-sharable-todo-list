@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ToDoneApp
+namespace ToDoneApp.Interfaces
 {
     public interface ITaskCommentRepository
     {

@@ -5,7 +5,7 @@ using System.Text;
 using ToDoneApp.DataDelegates;
 using ToDoneApp.Models;
 
-namespace ToDoneApp
+namespace ToDoneApp.SQLRepos
 {
     public class SqlUsersRepository : IUsersRepository
     {
