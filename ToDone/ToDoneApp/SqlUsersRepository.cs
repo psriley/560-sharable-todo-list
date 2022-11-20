@@ -43,11 +43,11 @@ namespace ToDoneApp
             return executor.ExecuteReader(d);
         }
 
-        public IReadOnlyList<Users> FetchGroupsUsers(string displayName)
+        public IReadOnlyList<Users> FetchGroupsUsers(int GroupID)
         {
-            if (string.IsNullOrEmpty(displayName)) throw new ArgumentException($"The parameter {nameof(displayName)} cannot be null or empty");
+            if (GroupID < 1) throw new ArgumentException($"The parameter {nameof(GroupID)} cannot be less than 1");
 
-            var d = new FetchGroupsUsersDataDelegate(displayName);
+            var d = new FetchGroupsUsersDataDelegate(GroupID);
             return executor.ExecuteReader(d);
         }
 

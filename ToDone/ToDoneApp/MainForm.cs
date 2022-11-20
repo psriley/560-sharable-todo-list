@@ -168,9 +168,15 @@ namespace ToDoneApp
             uxMainBox.Controls.Add(cGroup);
         }
 
-        public Control.ControlCollection Members
+        public Control.ControlCollection MainBoxControls
         {
             get { return uxMainBox.Controls; }
+        }
+
+        private void uxAdminButton_Click(object sender, EventArgs e)
+        {
+            uxMainBox.Controls.Clear();
+            uxMainBox.Controls.Add(new AdminControl());
         }
     }
 }

@@ -10,19 +10,19 @@ namespace ToDoneApp.DataDelegates
 {
     internal class FetchGroupsUsersDataDelegate : DataReaderDelegate<IReadOnlyList<Users>>
     {
-        private readonly string displayName;
+        private readonly int GroupID;
 
-        public FetchGroupsUsersDataDelegate(string displayName)
+        public FetchGroupsUsersDataDelegate(int GroupID)
             : base("ToDone.FetchGroupsUsers")
         {
-            this.displayName = displayName;
+            this.GroupID = GroupID;
         }
 
         public override void PrepareCommand(SqlCommand command)
         {
             base.PrepareCommand(command);
 
-            command.Parameters.AddWithValue("DisplayName", displayName);
+            command.Parameters.AddWithValue("GroupID", GroupID);
         }
 
 
@@ -34,11 +34,11 @@ namespace ToDoneApp.DataDelegates
             {
                 gUsers.Add(new Users(
                     reader.GetInt32("UserID"),
-                    displayName,
-                    reader.GetString("PasswordHash"),
+                    reader.GetString("DisplayName"),
+                    null,
                     reader.GetString("FirstName"),
                     reader.GetString("LastName"),
-                    reader.GetValue<bool>("IsAdmin")));
+                    false));
             }
 
             return gUsers;

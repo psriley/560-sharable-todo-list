@@ -47,11 +47,15 @@ namespace ToDoneApp
         private void FriendFriendsButtonUX_Click(object sender, EventArgs e)
         {
             form = (MainForm)this.Parent.Parent;
+            form.MainBoxControls.Clear();
             user = form.user;
             IReadOnlyList<Users> users = new SqlUsersRepository(connectionString).FetchUsersFriends(friend.UserID);
             foreach (Users u in users)
             {
-                form.Members.Add(new UserResultComponent(u, user, connectionString));
+                if (u.UserID != user.UserID)
+                {
+                    form.MainBoxControls.Add(new UserResultComponent(u, user, connectionString));
+                }
             }
         }
     }

@@ -46,13 +46,17 @@ namespace ToDoneApp
 
         private void uxMembers_Click(object sender, EventArgs e)
         {
-            /*form = (MainForm)this.Parent.Parent;
+            form = (MainForm)this.Parent.Parent;
+            form.MainBoxControls.Clear();
             user = form.user;
             IReadOnlyList<Users> users = new SqlUsersRepository(connectionString).FetchGroupsUsers(group.GroupID);
             foreach (Users u in users)
             {
-                form.Members.Add(new UserResultComponent(u, user, connectionString));
-            }*/
+                if(u.UserID != user.UserID)
+                {
+                    form.MainBoxControls.Add(new UserResultComponent(u, user, connectionString));
+                }
+            }
         }
     }
 }

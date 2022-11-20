@@ -35,7 +35,6 @@ namespace ToDoneApp
             if (!(ids.Contains(friend.UserID)))
             {
                 new SqlFriendsRepository(connectionString).AddFriend(caller.UserID, friend.UserID);
-                var x = (this.Parent.Parent.Parent.Parent).Name;
                 this.Parent.Controls.Remove(this);
             }
             else

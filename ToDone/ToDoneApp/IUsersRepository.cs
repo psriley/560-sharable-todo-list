@@ -13,9 +13,9 @@ namespace ToDoneApp
 
         IReadOnlyList<Users> FetchUsersFriends(int UserID);
 
-        IReadOnlyList<Users> FetchGroupsUsers(string DisplayName);
+        IReadOnlyList<Users> FetchGroupsUsers(int GroupID);
 
-        IReadOnlyList<Groups> FetchUsersGroups(int GroupID);
+        IReadOnlyList<Groups> FetchUsersGroups(int UserID);
 
         IReadOnlyList<Users> FetchUsers();
 

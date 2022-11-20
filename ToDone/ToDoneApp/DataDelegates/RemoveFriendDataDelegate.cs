@@ -25,8 +25,8 @@ namespace ToDoneApp.DataDelegates
         {
             base.PrepareCommand(command);
 
-            command.Parameters.AddWithValue("User1", UserID);
-            command.Parameters.AddWithValue("User2", FriendID);
+            command.Parameters.AddWithValue("UserID", UserID);
+            command.Parameters.AddWithValue("FriendID", FriendID);
         }
 
 
