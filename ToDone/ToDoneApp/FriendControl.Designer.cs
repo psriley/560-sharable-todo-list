@@ -63,6 +63,7 @@
             this.FriendFriendsButtonUX.TabIndex = 2;
             this.FriendFriendsButtonUX.Text = "Friends";
             this.FriendFriendsButtonUX.UseVisualStyleBackColor = true;
+            this.FriendFriendsButtonUX.Click += new System.EventHandler(this.FriendFriendsButtonUX_Click);
             // 
             // uxRemoveFriend
             // 
@@ -74,6 +75,7 @@
             this.uxRemoveFriend.TabIndex = 3;
             this.uxRemoveFriend.Text = "-";
             this.uxRemoveFriend.UseVisualStyleBackColor = false;
+            this.uxRemoveFriend.Click += new System.EventHandler(this.uxRemoveFriend_Click);
             // 
             // FriendControl
             // 

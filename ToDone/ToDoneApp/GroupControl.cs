@@ -11,6 +11,7 @@ namespace ToDoneApp
 {
     public partial class GroupControl : UserControl
     {
+        private MainForm form;
         private Users user;
         private readonly Groups group;
         private readonly string connectionString;
@@ -24,7 +25,7 @@ namespace ToDoneApp
 
         private void uxLeaveGroup_Click(object sender, EventArgs e)
         {
-            MainForm form = (MainForm)this.Parent.Parent;
+            form = (MainForm)this.Parent.Parent;
             user = form.user;
             IReadOnlyList<Groups> groups = new SqlUsersRepository(connectionString).FetchUsersGroups(user.UserID);
             List<int> ids = new List<int>();
@@ -41,6 +42,17 @@ namespace ToDoneApp
             {
                 MessageBox.Show("You can't leave a group you aren't in!");
             }
+        }
+
+        private void uxMembers_Click(object sender, EventArgs e)
+        {
+            /*form = (MainForm)this.Parent.Parent;
+            user = form.user;
+            IReadOnlyList<Users> users = new SqlUsersRepository(connectionString).FetchGroupsUsers(group.GroupID);
+            foreach (Users u in users)
+            {
+                form.Members.Add(new UserResultComponent(u, user, connectionString));
+            }*/
         }
     }
 }

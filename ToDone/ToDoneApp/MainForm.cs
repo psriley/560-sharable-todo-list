@@ -167,5 +167,10 @@ namespace ToDoneApp
             CreateGroupControl cGroup = new CreateGroupControl(connectionString);
             uxMainBox.Controls.Add(cGroup);
         }
+
+        public Control.ControlCollection Members
+        {
+            get { return uxMainBox.Controls; }
+        }
     }
 }

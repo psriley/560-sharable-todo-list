@@ -63,6 +63,7 @@
             this.uxMembers.TabIndex = 2;
             this.uxMembers.Text = "Members";
             this.uxMembers.UseVisualStyleBackColor = true;
+            this.uxMembers.Click += new System.EventHandler(this.uxMembers_Click);
             // 
             // uxLeaveGroup
             // 
