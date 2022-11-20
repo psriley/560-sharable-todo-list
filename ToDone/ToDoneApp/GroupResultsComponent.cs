@@ -11,10 +11,36 @@ namespace ToDoneApp
 {
     public partial class GroupResultsComponent : UserControl
     {
-        public GroupResultsComponent(Groups g, Users user, string connectionString)
+        private readonly Groups g;
+        private readonly Users u;
+        private readonly string connectionString;
+        public GroupResultsComponent(Groups group, Users user, string connectionString)
         {
+            this.g = group;
+            this.u = user;
+            this.connectionString = connectionString;
             InitializeComponent();
-            uxDisplay.Text = g.Title;
+            uxDisplay.Text = group.Title;
+        }
+
+        private void uxJoinGroup_Click(object sender, EventArgs e)
+        {
+            IReadOnlyList<Groups> groups = new SqlUsersRepository(connectionString).FetchUsersGroups(u.UserID);
+            List<int> ids = new List<int>();
+            foreach (Groups group in groups)
+            {
+                ids.Add(group.GroupID);
+            }
+            if (!(ids.Contains(g.GroupID)))
+            {
+                new SqlGroupUserRepository(connectionString).JoinGroup(u.UserID, g.GroupID);
+                var x = (this.Parent.Parent.Parent.Parent).Name;
+                this.Parent.Controls.Remove(this);
+            }
+            else
+            {
+                MessageBox.Show("You are already in this group!");
+            }
         }
     }
 }

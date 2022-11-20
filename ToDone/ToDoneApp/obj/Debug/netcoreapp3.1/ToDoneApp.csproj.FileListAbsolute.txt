@@ -132,3 +132,15 @@ C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\
 C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.genruntimeconfig.cache
 C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.TaskCommentControl.resources
 C:\Users\chrbe\source\Repos\New folder\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.TaskSearchResults.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.CreateTaskControl.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.CreateUserForm.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.GroupControl.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.GroupResultsComponent.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.GroupSearchResults.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.LogInForm.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.TaskCommentControl.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.TaskControl.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.TaskSearchResults.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.UserResultComponent.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.UserSearchResults.resources
+E:\GitHub\Repositories\560Project\ToDone\ToDoneApp\obj\Debug\netcoreapp3.1\ToDoneApp.CreateGroupControl.resources

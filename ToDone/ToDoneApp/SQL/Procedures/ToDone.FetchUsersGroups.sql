@@ -3,5 +3,5 @@
 AS
 SELECT G.GroupID, G.Title, G.[Description]
 FROM ToDone.Groups G
-INNER JOIN ToDone.GroupUser GU ON GU.UserID = @UserID
+INNER JOIN ToDone.GroupUser GU ON GU.UserID = @UserID AND G.GroupID = GU.GroupID
 GO

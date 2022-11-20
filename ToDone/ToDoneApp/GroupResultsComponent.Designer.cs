@@ -35,29 +35,33 @@
             // uxDisplay
             // 
             this.uxDisplay.AutoSize = true;
-            this.uxDisplay.Location = new System.Drawing.Point(3, 7);
+            this.uxDisplay.Location = new System.Drawing.Point(4, 12);
+            this.uxDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.uxDisplay.Name = "uxDisplay";
-            this.uxDisplay.Size = new System.Drawing.Size(38, 15);
+            this.uxDisplay.Size = new System.Drawing.Size(59, 25);
             this.uxDisplay.TabIndex = 0;
             this.uxDisplay.Text = "label1";
             // 
             // uxJoinGroup
             // 
-            this.uxJoinGroup.Location = new System.Drawing.Point(120, 4);
+            this.uxJoinGroup.Location = new System.Drawing.Point(171, 7);
+            this.uxJoinGroup.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uxJoinGroup.Name = "uxJoinGroup";
-            this.uxJoinGroup.Size = new System.Drawing.Size(522, 23);
+            this.uxJoinGroup.Size = new System.Drawing.Size(746, 38);
             this.uxJoinGroup.TabIndex = 1;
             this.uxJoinGroup.Text = "Join Group";
             this.uxJoinGroup.UseVisualStyleBackColor = true;
+            this.uxJoinGroup.Click += new System.EventHandler(this.uxJoinGroup_Click);
             // 
             // GroupResultsComponent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.uxJoinGroup);
             this.Controls.Add(this.uxDisplay);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "GroupResultsComponent";
-            this.Size = new System.Drawing.Size(645, 30);
+            this.Size = new System.Drawing.Size(921, 50);
             this.ResumeLayout(false);
             this.PerformLayout();
 

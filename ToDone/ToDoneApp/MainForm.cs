@@ -160,5 +160,12 @@ namespace ToDoneApp
                     break;
             }
         }
+
+        private void uxCreateGroup_Click(object sender, EventArgs e)
+        {
+            uxMainBox.Controls.Clear();
+            CreateGroupControl cGroup = new CreateGroupControl(connectionString);
+            uxMainBox.Controls.Add(cGroup);
+        }
     }
 }

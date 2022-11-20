@@ -40,7 +40,7 @@ namespace ToDoneApp
             }
             else
             {
-                MessageBox.Show("You are already frields with this user!");
+                MessageBox.Show("You are already friends with this user!");
             }
         }
     }
