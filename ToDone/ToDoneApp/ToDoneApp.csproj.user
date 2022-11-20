@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="AdminControl.cs">
+    <Compile Update="UserControls\AdminControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="CreateGroupControl.cs">
+    <Compile Update="UserControls\CreateGroupControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="CreateTaskControl.cs">
+    <Compile Update="UserControls\CreateTaskControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="CreateUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GroupControl.cs">
+    <Compile Update="UserControls\GroupControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="GroupResultsComponent.cs">
+    <Compile Update="UserControls\GroupResultsComponent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="GroupSearchResults.cs">
+    <Compile Update="UserControls\GroupSearchResults.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="LogInForm.cs">
@@ -28,22 +28,22 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FriendControl.cs">
+    <Compile Update="UserControls\FriendControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="TaskCommentControl.cs">
+    <Compile Update="UserControls\TaskCommentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="TaskControl.cs">
+    <Compile Update="UserControls\TaskControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="TaskSearchResults.cs">
+    <Compile Update="UserControls\TaskSearchResults.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserResultComponent.cs">
+    <Compile Update="UserControls\UserResultComponent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserSearchResults.cs">
+    <Compile Update="UserControls\UserSearchResults.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
