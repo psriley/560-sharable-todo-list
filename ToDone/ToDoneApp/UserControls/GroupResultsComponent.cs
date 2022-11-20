@@ -22,6 +22,7 @@ namespace ToDoneApp
             this.connectionString = connectionString;
             InitializeComponent();
             uxDisplay.Text = group.Title;
+            uxDescription.Text = group.Description;
         }
 
         private void uxJoinGroup_Click(object sender, EventArgs e)

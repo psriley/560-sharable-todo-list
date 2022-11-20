@@ -53,6 +53,7 @@
             this.FriendTaskButtonUX.TabIndex = 1;
             this.FriendTaskButtonUX.Text = "Tasks";
             this.FriendTaskButtonUX.UseVisualStyleBackColor = true;
+            this.FriendTaskButtonUX.Click += new System.EventHandler(this.FriendTaskButtonUX_Click);
             // 
             // FriendFriendsButtonUX
             // 

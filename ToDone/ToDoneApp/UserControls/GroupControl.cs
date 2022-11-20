@@ -59,5 +59,25 @@ namespace ToDoneApp
                 }
             }
         }
+
+        private void uxTasks_Click(object sender, EventArgs e)
+        {
+            form = (MainForm)this.Parent.Parent;
+            form.MainBoxControls.Clear();
+            user = form.user;
+            IReadOnlyList<Users> users = new SqlUsersRepository(connectionString).FetchGroupsUsers(group.GroupID);
+            foreach (Users u in users)
+            {
+                IReadOnlyList<Task> tasks = new SqlTaskRepository(connectionString).FetchUserTasks(u.UserID);
+                foreach (Task task in tasks)
+                {
+                    // Don't show public tasks in group tasks
+                    if (task.PrivacyLevel != 3)
+                    {
+                        form.MainBoxControls.Add(new TaskControl(task, connectionString, u));
+                    }
+                }
+            }
+        }
     }
 }

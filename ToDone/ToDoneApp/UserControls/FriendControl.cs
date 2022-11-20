@@ -59,5 +59,17 @@ namespace ToDoneApp
                 }
             }
         }
+
+        private void FriendTaskButtonUX_Click(object sender, EventArgs e)
+        {
+            form = (MainForm)this.Parent.Parent;
+            form.MainBoxControls.Clear();
+            user = form.user;
+            IReadOnlyList<Task> tasks = new SqlTaskRepository(connectionString).FetchUserTasks(friend.UserID);
+            foreach (Task task in tasks)
+            {
+                form.MainBoxControls.Add(new TaskControl(task, connectionString, friend));
+            }
+        }
     }
 }
