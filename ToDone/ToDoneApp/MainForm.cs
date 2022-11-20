@@ -14,7 +14,7 @@ namespace ToDoneApp
     public partial class MainForm : Form
     {
         private readonly string connectionString;
-        private readonly Users user;
+        public readonly Users user;
         public MainForm(string connectionString, Users user)
         {
             this.connectionString = connectionString;

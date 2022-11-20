@@ -11,10 +11,36 @@ namespace ToDoneApp
 {
     public partial class GroupControl : UserControl
     {
+        private Users user;
+        private readonly Groups group;
+        private readonly string connectionString;
         public GroupControl(Groups g, string connectionString)
         {
+            this.group = g;
+            this.connectionString = connectionString;
             InitializeComponent();
             uxGroupName.Text = g.Title;
+        }
+
+        private void uxLeaveGroup_Click(object sender, EventArgs e)
+        {
+            MainForm form = (MainForm)this.Parent.Parent;
+            user = form.user;
+            IReadOnlyList<Groups> groups = new SqlUsersRepository(connectionString).FetchUsersGroups(user.UserID);
+            List<int> ids = new List<int>();
+            foreach (Groups group in groups)
+            {
+                ids.Add(group.GroupID);
+            }
+            if ((ids.Contains(group.GroupID)))
+            {
+                new SqlGroupUserRepository(connectionString).LeaveGroup(user.UserID, group.GroupID);
+                this.Parent.Parent.Controls.Remove(this);
+            }
+            else
+            {
+                MessageBox.Show("You can't leave a group you aren't in!");
+            }
         }
     }
 }
