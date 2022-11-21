@@ -42,7 +42,6 @@ namespace ToDoneApp.SQLRepos
             if (string.IsNullOrEmpty(Description)) throw new ArgumentException($"The Parameter {nameof(Description)} can not be null or empty");
             if (PrivacyLevel < 0 | PrivacyLevel > 3) throw new ArgumentException($"The Parameter {nameof(PrivacyLevel)} must be one of the 4 choices provided");
 
-
             var d = new CreateTaskDataDelegate(CreatedByID, ClaimedByID, Title, Description, DueDate, PrivacyLevel, IsClaimable);
             return executor.ExecuteNonQuery(d);
         }
