@@ -41,7 +41,7 @@ Go
 If((Select Count(*) From ToDone.TaskComment) <> 1)
 Insert ToDone.TaskComment(TaskID, Comment)
 Values
-(1 /* passed in through c# */, N'Almost done with whatever Peyton task 1 is!')
+(1, N'Almost done with whatever Peyton task 1 is!')
 Go
 
 
@@ -64,5 +64,3 @@ Insert ToDone.GroupUser(UserID, GroupID)
 Values
 ((Select U.UserID From ToDone.Users U Where U.DisplayName = 'Admin'), (Select G.GroupID From ToDone.Groups G Where G.Title = N'New Group')),((Select U.UserID From ToDone.Users U Where U.DisplayName = 'Christian Berard'), (Select G.GroupID From ToDone.Groups G Where G.Title = N'New Group'))
 Go
-
-

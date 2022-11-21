@@ -27,5 +27,13 @@ namespace ToDoneApp.SQLRepos
             var d = new CreateTaskCommentDataDelegate(TaskID, Comment);
             return executor.ExecuteNonQuery(d);
         }
+
+        public List<TaskComment> FetchTaskComments(int TaskID)
+        {
+            if (TaskID < 1) throw new ArgumentException($"The Parameter {nameof(TaskID)} can not be less than 1");
+
+            var d = new FetchTaskCommentsDataDelegate(TaskID);
+            return executor.ExecuteReader(d);
+        }
     }
 }
