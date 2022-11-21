@@ -6,3 +6,4 @@
 5. Interface repositories used to declare interactions with the database can be found in the Interfaces folder (ToDoneApp/Interfaces), while the sql repositories that call the data delegates and execute queries can be found in the SQLRepos folder (ToDoneApp/SQLRepos).
 6. All user controls that define the user interface of controls used by the main form can be found in the UserControls folder (ToDoneApp/UserControls)
 7. All other application code can be found in the root of ToDoneApp (forms and Program.cs), beside the Database scripts (CreateDatabase, DropDatabase, RebuildDatabase) which can be found in the SolutionItems folder (In the root folder of the project).
+8. Users Created by default are Usernames: "Peyton Riley" "Christian Berard" "Admin" with respective passwords: "Peyton" "Chris" "Admin". Only "Admin" is an admin with access to the back end page with aggrigate query abilities.
