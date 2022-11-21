@@ -77,7 +77,7 @@
             // uxCompleted
             // 
             this.uxCompleted.AutoSize = true;
-            this.uxCompleted.Location = new System.Drawing.Point(170, 7);
+            this.uxCompleted.Location = new System.Drawing.Point(241, 29);
             this.uxCompleted.Name = "uxCompleted";
             this.uxCompleted.Size = new System.Drawing.Size(0, 15);
             this.uxCompleted.TabIndex = 4;
@@ -103,7 +103,7 @@
             this.Controls.Add(this.uxComplete);
             this.Controls.Add(this.uxTitle);
             this.Name = "TaskControl";
-            this.Size = new System.Drawing.Size(642, 30);
+            this.Size = new System.Drawing.Size(642, 49);
             this.ResumeLayout(false);
             this.PerformLayout();
 
