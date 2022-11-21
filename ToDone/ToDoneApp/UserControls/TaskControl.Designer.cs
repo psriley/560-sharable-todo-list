@@ -33,6 +33,7 @@
             this.uxComment = new System.Windows.Forms.Button();
             this.uxDelete = new System.Windows.Forms.Button();
             this.uxCompleted = new System.Windows.Forms.Label();
+            this.uxComments = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uxTitle
@@ -81,10 +82,21 @@
             this.uxCompleted.Size = new System.Drawing.Size(0, 15);
             this.uxCompleted.TabIndex = 4;
             // 
+            // uxComments
+            // 
+            this.uxComments.Location = new System.Drawing.Point(241, 3);
+            this.uxComments.Name = "uxComments";
+            this.uxComments.Size = new System.Drawing.Size(103, 23);
+            this.uxComments.TabIndex = 5;
+            this.uxComments.Text = "View Comments";
+            this.uxComments.UseVisualStyleBackColor = true;
+            this.uxComments.Click += new System.EventHandler(this.uxComments_Click);
+            // 
             // TaskControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.uxComments);
             this.Controls.Add(this.uxCompleted);
             this.Controls.Add(this.uxDelete);
             this.Controls.Add(this.uxComment);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.Button uxComment;
         private System.Windows.Forms.Button uxDelete;
         private System.Windows.Forms.Label uxCompleted;
+        private System.Windows.Forms.Button uxComments;
     }
 }

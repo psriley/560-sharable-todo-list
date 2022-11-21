@@ -58,6 +58,7 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchUsersFriends.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchUsersGroups.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchUserTasks.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.FetchTaskComments.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.GetGroup.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.GetUser.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.JoinGroup.sql"

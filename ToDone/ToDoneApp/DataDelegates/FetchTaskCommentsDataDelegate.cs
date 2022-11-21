@@ -12,19 +12,19 @@ namespace ToDoneApp.DataDelegates
 {
     internal class FetchTaskCommentsDataDelegate : DataReaderDelegate<List<TaskComment>>
     {
-        private readonly int GroupID;
+        private readonly int TaskID;
 
-        public FetchTaskCommentsDataDelegate(int GroupID)
+        public FetchTaskCommentsDataDelegate(int TaskID)
             : base("ToDone.FetchTaskComments")
         {
-            this.GroupID = GroupID;
+            this.TaskID = TaskID;
         }
 
         public override void PrepareCommand(SqlCommand command)
         {
             base.PrepareCommand(command);
 
-            command.Parameters.AddWithValue("GroupID", GroupID);
+            command.Parameters.AddWithValue("TaskID", TaskID);
         }
 
         public override List<TaskComment> Translate(SqlCommand command, IDataRowReader reader)

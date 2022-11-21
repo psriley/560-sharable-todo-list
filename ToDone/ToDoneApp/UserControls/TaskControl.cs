@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using ToDoneApp.Models;
 using ToDoneApp.SQLRepos;
+using ToDoneApp.UserControls;
 
 namespace ToDoneApp
 {
@@ -63,6 +64,17 @@ namespace ToDoneApp
             }
             this.Parent.Controls.Add(new TaskCommentControl(task, connectionString));
             this.Parent.Controls.Remove(this);
+        }
+
+        private void uxComments_Click(object sender, EventArgs e)
+        {
+            Control parentControl = this.Parent;
+            parentControl.Controls.Clear();
+            List<TaskComment> comments = new SqlTaskCommentRepository(connectionString).FetchTaskComments(task.TaskID);
+            foreach(TaskComment comment in comments)
+            {
+                parentControl.Controls.Add(new TaskCommentViewer(comment.Comment));
+            }
         }
     }
 }

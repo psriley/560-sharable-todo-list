@@ -34,6 +34,9 @@
     <Compile Update="UserControls\TaskCommentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UserControls\TaskCommentViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControls\TaskControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
