@@ -73,7 +73,7 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Procedures\ToDone.PopularHourUser.sql"
 
 Write-Host "Inserting data..."
-Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Data\ToDone.PrivacyLevelData.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "ToDoneApp\SQL\Data\ToDone.Data.sql"
 
 Write-Host "Rebuild completed."
 Write-Host ""

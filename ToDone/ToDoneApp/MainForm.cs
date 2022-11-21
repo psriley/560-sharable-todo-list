@@ -77,7 +77,10 @@ namespace ToDoneApp
             {
                 if (t.PrivacyLevel != 3 || t.CreatedByID == user.UserID)
                 {
-                    uxMainBox.Controls.Add(new TaskControl(t, connectionString, user));
+                    if(t.IsActive == true)
+                    {
+                        uxMainBox.Controls.Add(new TaskControl(t, connectionString, user));
+                    }
                 }
             }
         }
