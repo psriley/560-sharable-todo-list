@@ -1,8 +1,8 @@
 ﻿Insert ToDone.PrivacyLevel(PrivacyID, PrivacyType)
 Values
-(1, N'Creator and Claimer'),
-(2, N'Creator, Claimer, and Friends'),
-(3, N'Creator, Claimer, Group and Friends'),
-(4, N'Public');
+(0, N'Creator and Claimer'),
+(1, N'Creator, Claimer, and Friends'),
+(2, N'Creator, Claimer, Group and Friends'),
+(3, N'Public');
 
 Go
