@@ -53,6 +53,7 @@
             this.uxTasks.TabIndex = 1;
             this.uxTasks.Text = "Tasks";
             this.uxTasks.UseVisualStyleBackColor = true;
+            this.uxTasks.Click += new System.EventHandler(this.uxTasks_Click);
             // 
             // uxMembers
             // 

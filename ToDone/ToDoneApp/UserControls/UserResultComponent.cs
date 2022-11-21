@@ -13,6 +13,8 @@ namespace ToDoneApp
 {
     public partial class UserResultComponent : UserControl
     {
+        private MainForm form;
+        private Users user;
         private readonly Users friend;
         private readonly Users caller;
         private readonly string connectionString;
@@ -41,6 +43,21 @@ namespace ToDoneApp
             else
             {
                 MessageBox.Show("You are already friends with this user!");
+            }
+        }
+
+        private void uxPublicTasks_Click(object sender, EventArgs e)
+        {
+            form = (MainForm)this.Parent.Parent.Parent.Parent;
+            form.MainBoxControls.Clear();
+            user = form.user;
+            IReadOnlyList<Task> tasks = new SqlTaskRepository(connectionString).FetchUserTasks(friend.UserID);
+            foreach (Task task in tasks)
+            {
+                if (task.PrivacyLevel == 3)
+                {
+                    form.MainBoxControls.Add(new TaskControl(task, connectionString, user));
+                }
             }
         }
     }
