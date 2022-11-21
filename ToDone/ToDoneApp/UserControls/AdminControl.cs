@@ -55,7 +55,7 @@ namespace ToDoneApp
             if(GroupID > 0)
             {
                 uxAvgGroup.Text = $"{new SqlAdminRepository(connectionString).AvgTasksCompletedGroup(GroupID)}";
-            }
+            }   
 
             uxFriends.Text = $"{new SqlAdminRepository(connectionString).AvgFriends()}";
 
