@@ -177,7 +177,7 @@ namespace ToDoneApp
         private void uxAdminButton_Click(object sender, EventArgs e)
         {
             uxMainBox.Controls.Clear();
-            uxMainBox.Controls.Add(new AdminControl());
+            uxMainBox.Controls.Add(new AdminControl(connectionString));
         }
     }
 }

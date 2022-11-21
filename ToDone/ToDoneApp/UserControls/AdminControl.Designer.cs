@@ -46,6 +46,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.uxFriendsGroupInput = new System.Windows.Forms.TextBox();
             this.uxFriendsGroup = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.uxFriends = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // uxRunAdmin
@@ -199,7 +201,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(22, 287);
+            this.label7.Location = new System.Drawing.Point(22, 334);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(485, 21);
             this.label7.TabIndex = 20;
@@ -208,7 +210,7 @@
             // uxFriendsGroupInput
             // 
             this.uxFriendsGroupInput.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uxFriendsGroupInput.Location = new System.Drawing.Point(459, 279);
+            this.uxFriendsGroupInput.Location = new System.Drawing.Point(459, 326);
             this.uxFriendsGroupInput.Name = "uxFriendsGroupInput";
             this.uxFriendsGroupInput.Size = new System.Drawing.Size(36, 29);
             this.uxFriendsGroupInput.TabIndex = 21;
@@ -217,16 +219,37 @@
             // 
             this.uxFriendsGroup.AutoSize = true;
             this.uxFriendsGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uxFriendsGroup.Location = new System.Drawing.Point(501, 287);
+            this.uxFriendsGroup.Location = new System.Drawing.Point(501, 334);
             this.uxFriendsGroup.Name = "uxFriendsGroup";
             this.uxFriendsGroup.Size = new System.Drawing.Size(79, 21);
             this.uxFriendsGroup.TabIndex = 22;
             this.uxFriendsGroup.Text = "No Group";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(22, 289);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(284, 21);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Average number of friends for all users:";
+            // 
+            // uxFriends
+            // 
+            this.uxFriends.AutoSize = true;
+            this.uxFriends.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uxFriends.Location = new System.Drawing.Point(306, 289);
+            this.uxFriends.Name = "uxFriends";
+            this.uxFriends.Size = new System.Drawing.Size(0, 21);
+            this.uxFriends.TabIndex = 24;
+            // 
             // AdminControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.uxFriends);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.uxFriendsGroup);
             this.Controls.Add(this.uxFriendsGroupInput);
             this.Controls.Add(this.label7);
@@ -272,5 +295,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox uxFriendsGroupInput;
         private System.Windows.Forms.Label uxFriendsGroup;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label uxFriends;
     }
 }
