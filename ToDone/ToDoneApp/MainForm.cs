@@ -75,7 +75,7 @@ namespace ToDoneApp
             IReadOnlyList<ToDoneApp.Models.Task> tasks = new SqlTaskRepository(connectionString).FetchUserTasks(user.UserID);
             foreach(ToDoneApp.Models.Task t in tasks)
             {
-                if (t.PrivacyLevel != 3)
+                if (t.PrivacyLevel != 3 || t.CreatedByID == user.UserID)
                 {
                     uxMainBox.Controls.Add(new TaskControl(t, connectionString, user));
                 }
