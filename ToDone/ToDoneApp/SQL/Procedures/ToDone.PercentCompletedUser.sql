@@ -2,11 +2,11 @@
 @UserID INT
 AS
 SELECT (
-(SELECT COUNT(*)
+CAST((SELECT COUNT(*)
 FROM ToDone.Task T
-WHERE T.CompletedOn < T.DueDate AND T.CreatedByID = @UserID)
+WHERE T.CompletedOn < T.DueDate AND T.CreatedByID = @UserID) AS FLOAT)
 /
-(SELECT COUNT(*)
+CAST((SELECT COUNT(*)
 FROM ToDone.Task T
-WHERE T.CreatedByID = @UserID)*100) AS Completed
+WHERE T.CreatedByID = @UserID) AS FLOAT)*100) AS Completed
 GO

@@ -18,16 +18,20 @@ Values
 
 Insert ToDone.Users(DisplayName, PasswordHash, FirstName, LastName, IsAdmin)
 Values
+(N'Mitch Hutchinson', N'74180297999237212042469222115422', N'Mitch', N'Hutchinson', 0)
+
+Insert ToDone.Users(DisplayName, PasswordHash, FirstName, LastName, IsAdmin)
+Values
 (N'Admin', N'19319436176602171881231061342151', N'Admin', N'Admin', 1)
 Go
 
 Insert ToDone.Task(CreatedByID, Title, [Description], DueDate, CompletedOn, PrivacyLevel, IsClaimable)
 Values
-((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Peyton Riley'), N'Peyton First Task!', N'This task is not claimable', '2022-11-19 23:00:00', '2022-11-19 22:00:00', 0, 0),
-((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Peyton Riley'), N'Peyton Second Task!', N'This task is not claimable', '2022-11-19 23:00:00', null, 3, 0),
-((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Christian Berard'), N'Christian First Task!', N'This task is claimable', '2022-11-19 23:00:00', '2022-12-19 22:00:00', 1, 1),
-((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Christian Berard'), N'Christian Second Task!', N'This task is not claimable', '2022-11-19 23:00:00', '2022-12-19 00:00:00', 1, 1),
-((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Christian Berard'), N'Christian Second Task!', N'This task is not claimable', '2022-11-19 23:00:00', '2022-10-19 16:00:00', 2, 1)
+((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Peyton Riley'), N'Peyton First Task!', N'This task is not claimable', '2022-12-19 23:00:00', null, 1, 0),
+((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Peyton Riley'), N'Peyton Second Task!', N'This task is not claimable', '2022-12-19 23:00:00', null, 1, 0),
+((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Christian Berard'), N'Christian First Task!', N'This task is claimable', '2022-12-19 23:00:00', '2022-12-19 22:00:00', 1, 1),
+((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Christian Berard'), N'Christian Second Task!', N'This task is not claimable', '2022-12-19 23:00:00', '2022-12-19 00:00:00', 1, 1),
+((Select U.UserID From ToDone.Users U Where U.DisplayName = N'Christian Berard'), N'Christian Second Task!', N'This task is not claimable', '2022-12-19 23:00:00', '2022-10-19 16:00:00', 2, 1)
 Go
 
 Insert ToDone.TaskComment(TaskID, Comment)

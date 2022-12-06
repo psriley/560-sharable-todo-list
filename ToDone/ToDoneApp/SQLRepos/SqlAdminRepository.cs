@@ -52,7 +52,7 @@ namespace ToDoneApp.SQLRepos
             return executor.ExecuteReader(d);
         }
 
-        public int PercentCompletedUser(int UserID)
+        public double PercentCompletedUser(int UserID)
         {
             if (UserID < 1) throw new ArgumentException($"The Parameter {nameof(UserID)} can not be less than 1");
 

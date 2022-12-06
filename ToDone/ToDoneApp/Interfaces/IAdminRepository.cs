@@ -8,7 +8,7 @@ namespace ToDoneApp.Interfaces
     {
         double PercentCompleted();
 
-        int PercentCompletedUser(int UserID);
+        double PercentCompletedUser(int UserID);
 
         List<int> PopularHour();
 

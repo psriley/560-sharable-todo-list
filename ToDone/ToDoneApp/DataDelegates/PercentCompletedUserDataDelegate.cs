@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ToDoneApp.DataDelegates
 {
-    internal class PercentCompletedUserDataDelegate : DataReaderDelegate<int>
+    internal class PercentCompletedUserDataDelegate : DataReaderDelegate<double>
     {
         private readonly int UserID;
         public PercentCompletedUserDataDelegate(int UserID) :
@@ -22,11 +22,11 @@ namespace ToDoneApp.DataDelegates
             command.Parameters.AddWithValue("UserID", UserID);
         }
 
-        public override int Translate(SqlCommand command, IDataRowReader reader)
+        public override double Translate(SqlCommand command, IDataRowReader reader)
         {
             if (!reader.Read()) return 0;
 
-            return reader.GetInt32("Completed");
+            return reader.GetValue<double>("Completed");
         }
     }
 }
